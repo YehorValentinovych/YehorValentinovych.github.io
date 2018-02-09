@@ -1,0 +1,176 @@
+/* line 1, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon {
+  position: relative;
+  width: 100%;
+  min-height: 511px;
+  height: auto;
+  margin: 100px 0;
+  background-color: #f7fdff;
+}
+
+/* line 10, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .author_comsun {
+  position: absolute;
+  z-index: 1;
+  max-width: 700px;
+}
+
+/* line 16, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .book_cover {
+  width: 330px;
+  position: absolute;
+  top: 32px;
+  left: 620px;
+  z-index: 2;
+}
+
+/* line 24, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .date_of_release {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid rgba(255, 187, 88, 0.9);
+  border-top: 13px solid rgba(255, 187, 88, 0.9);
+  position: absolute;
+  width: 78px;
+  text-align: center;
+  height: 80px;
+  top: 10px;
+  left: 650px;
+  padding: 8px 8px;
+  z-index: 3;
+}
+
+/* line 38, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .date_of_release::after {
+  content: '';
+  position: absolute;
+  left: -3px;
+  bottom: -59px;
+  border: 40px solid transparent;
+  border-top: 20px solid white;
+}
+
+/* line 47, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .comming_soon_block {
+  float: right;
+  width: 40%;
+  margin-top: 80px;
+  font-size: 21px;
+  line-height: 29px;
+  font-family: Yrsa;
+  color: #555963;
+}
+
+/* line 57, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block h3 {
+  font-size: 42px;
+  font-family: Ramaraja;
+  margin-bottom: 23px;
+  color: #555963;
+}
+
+/* line 64, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block .author-rating {
+  width: 100%;
+  float: left;
+  margin-bottom: 45px;
+  height: auto;
+}
+
+/* line 71, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block .author-rating .author {
+  text-decoration: none;
+  float: left;
+  font-size: 18px;
+  font-family: Amiri;
+  margin-right: 30px;
+  color: #da8913;
+}
+
+/* line 80, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block .author-rating .rating {
+  float: left;
+  padding-left: 25px;
+}
+
+/* line 85, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block .rating p {
+  font-size: 17px;
+}
+
+/* line 89, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon_block .rating p img {
+  padding: 0 0 0 10px;
+  position: relative;
+  top: 5px;
+}
+
+/* line 95, ../../sass/blocks/comming-soon-block.scss */
+.comming_soon .comming_soon_block .commingsoon_content {
+  font-size: 21px;
+  line-height: 29px;
+  font-family: Yrsa;
+  margin-top: 45px;
+  padding-right: 120px;
+}
+
+@media (max-width: 1600px) {
+  /* line 104, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .comming_soon_block {
+    width: 30%;
+  }
+}
+@media (max-width: 1380px) {
+  /* line 110, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .author_comsun {
+    width: 600px;
+  }
+
+  /* line 114, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .book_cover {
+    width: 270px;
+    left: 530px;
+    top: 35px;
+  }
+
+  /* line 120, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .date_of_release {
+    left: 550px;
+  }
+
+  /* line 124, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .comming_soon_block {
+    min-width: 500px;
+  }
+}
+@media (max-width: 1300px) {
+  /* line 130, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .comming_soon_block {
+    min-width: 30%;
+  }
+}
+@media (max-width: 1180px) {
+  /* line 136, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .author_comsun {
+    width: 500px;
+  }
+
+  /* line 140, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .book_cover {
+    width: 200px;
+    left: 430px;
+    top: 45px;
+  }
+
+  /* line 146, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .date_of_release {
+    left: 450px;
+    top: 20px;
+  }
+
+  /* line 151, ../../sass/blocks/comming-soon-block.scss */
+  .comming_soon .comming_soon_block {
+    margin-top: 50px;
+    min-width: 35%;
+  }
+}

@@ -1,0 +1,39 @@
+/* line 1, ../../sass/blocks/style-cart-content.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../sass/blocks/style-cart-content.scss */
+body {
+  font-family: Ramaraja, Yrsa, serif;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* line 15, ../../sass/blocks/style-cart-content.scss */
+.wrapper_cart {
+  padding: 0 8%;
+  display: inline-block;
+  background-color: transparent;
+}
+
+/* line 21, ../../sass/blocks/style-cart-content.scss */
+h1 {
+  font-family: Ramaraja;
+  font-size: 42px;
+  line-height: 58px;
+  color: #555963;
+  text-align: center;
+  padding: 229px 0 88px 0;
+}
+
+@media (max-width: 1060px) {
+  /* line 31, ../../sass/blocks/style-cart-content.scss */
+  .wrapper_cart {
+    padding: 0 5%;
+  }
+}

@@ -1,0 +1,209 @@
+/* line 1, ../../sass/blocks/mobile-menu.scss */
+.popup_demo2 .overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  overflow: hidden;
+  -moz-transition: all 1s 0.1s ease-in;
+  -o-transition: all 1s 0.1s ease-in;
+  -webkit-transition: all 1s 0.1s ease-in;
+}
+
+/* line 20, ../../sass/blocks/mobile-menu.scss */
+.popup_demo2 .overlay2:target {
+  visibility: visible;
+  opacity: 1;
+  /*transition: 0.3s;*/
+  z-index: 99999;
+  top: 0px;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  overflow: overlay;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+/* line 35, ../../sass/blocks/mobile-menu.scss */
+.substrate2 {
+  text-align: center;
+  width: 50%;
+  float: right;
+  min-height: 500px;
+  height: 100%;
+  position: relative;
+  right: 5px;
+  top: 5px;
+  box-shadow: 0 5px 7px #8F8C8D;
+  background-color: #F2FDFF;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+/* line 51, ../../sass/blocks/mobile-menu.scss */
+.substrate2 #logo {
+  display: block;
+  margin: 20px;
+}
+
+/* line 55, ../../sass/blocks/mobile-menu.scss */
+.substrate2 .close2 {
+  text-decoration: none;
+  color: #555963;
+  float: left;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* line 63, ../../sass/blocks/mobile-menu.scss */
+.substrate2 .navigation {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 110px;
+}
+
+/* line 69, ../../sass/blocks/mobile-menu.scss */
+.substrate2 .navigation .menu {
+  min-width: 100px;
+  width: auto;
+  height: auto;
+}
+
+/* line 74, ../../sass/blocks/mobile-menu.scss */
+.substrate2 li {
+  list-style-type: none;
+  padding: 20px 10px 10px 5px;
+  border-bottom: 2px solid #DADADB;
+}
+
+/* line 79, ../../sass/blocks/mobile-menu.scss */
+.substrate2 li:hover {
+  border-bottom: 2px solid #ffbb58;
+  cursor: pointer;
+}
+
+/* line 83, ../../sass/blocks/mobile-menu.scss */
+.substrate2 li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #45474b;
+}
+
+/* line 91, ../../sass/blocks/mobile-menu.scss */
+.substrate2 .header_menu {
+  display: block;
+  margin: 30px auto;
+  position: relative;
+  left: -50%;
+  transform: translateX(52%);
+}
+
+/* line 99, ../../sass/blocks/mobile-menu.scss */
+.header_menu .box {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* line 103, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2 {
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  top: -12px;
+  text-decoration: none;
+}
+
+/* line 113, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2 input#search {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  font-size: 10pt;
+  color: #262626;
+  padding-left: 35px;
+  color: #fff;
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+/* line 131, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2 .icon {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  margin-left: 11px;
+  margin-top: 11px;
+  z-index: 1;
+  color: #45474B;
+}
+
+/* line 141, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2 input#search:focus, .container-2 input#search:active {
+  outline: none;
+  width: 150px;
+  border-radius: 15px;
+  background: #FFBB58;
+}
+
+/* line 148, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2:hover input#search {
+  width: 150px;
+  border-radius: 15px;
+  background: #ffbb58;
+  transition: 0.5s;
+}
+
+/* line 155, ../../sass/blocks/mobile-menu.scss */
+.header_menu .container-2:hover .icon {
+  color: #93a2ad;
+}
+
+/* line 159, ../../sass/blocks/mobile-menu.scss */
+.header_menu .shopping_cart {
+  display: inline-block;
+  text-decoration: none;
+  height: 35px;
+  margin: 0 13px;
+}
+
+/* line 166, ../../sass/blocks/mobile-menu.scss */
+.header_menu .shopping_cart img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+/* line 171, ../../sass/blocks/mobile-menu.scss */
+.header_menu .userpic {
+  display: inline-block;
+  margin: 0 13px;
+}
+
+/* line 176, ../../sass/blocks/mobile-menu.scss */
+.header_menu .userpic img {
+  border-radius: 50%;
+  width: 35px;
+  height: 33px;
+}

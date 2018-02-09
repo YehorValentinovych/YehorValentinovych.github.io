@@ -1,0 +1,428 @@
+/* line 1, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront {
+  width: 100%;
+}
+
+/* line 5, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront h2 {
+  text-align: center;
+  font-size: 42px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+  margin-bottom: 65px;
+}
+
+/* line 13, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront_menu {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 73px;
+}
+
+/* line 19, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront nav.navigation {
+  float: left;
+}
+
+/* line 27, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront nav.navigation li {
+  float: left;
+  list-style-type: none;
+  padding: 10px 20px 15px 20px;
+  border-bottom: 2px solid #BFBFBF;
+}
+
+/* line 34, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront nav.navigation li:hover {
+  border-bottom: 2px solid #555963;
+}
+
+/* line 38, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront nav.navigation a {
+  text-decoration: none;
+  font-family: Lato, regular;
+  font-size: 16px;
+  color: #BFBFBF;
+}
+
+/* line 45, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront .navigation a:hover {
+  color: #555963;
+}
+
+/* line 49, ../../sass/blocks/main-shopfront-block1.scss */
+.icon_select_mate {
+  position: absolute;
+  top: 13px;
+  right: 2%;
+  font-size: 16px;
+  height: 22px;
+}
+
+/* line 58, ../../sass/blocks/main-shopfront-block1.scss */
+.select_mate {
+  float: right;
+  text-align: left;
+  position: relative;
+  min-width: 113px;
+  width: 150px;
+  min-height: 45px;
+  font-family: Lato;
+  font-style: regular;
+  font-size: 16px;
+  color: #555963;
+  border-bottom: 1.5px solid gray;
+  font-weight: 300;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: all 200ms ease-in-out;
+  /* Oculto el elemento select */
+}
+/* line 75, ../../sass/blocks/main-shopfront-block1.scss */
+.select_mate select {
+  position: absolute;
+  overflow: hidden;
+  height: 0px;
+  opacity: 0;
+  z-index: -1;
+}
+/* line 82, ../../sass/blocks/main-shopfront-block1.scss */
+.select_mate:hover {
+  border-bottom: 1.5px solid #ffbb58;
+}
+
+/* line 87, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_list_select_mate {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+/* line 93, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_select_int {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  transition: all 375ms ease-in-out;
+}
+/* line 109, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_select_int li {
+  position: relative;
+  float: left;
+  width: 96%;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #F5F5F5;
+  list-style-type: none;
+  padding: 10px 2%;
+  margin: 0px;
+  transition: all 275ms ease-in-out;
+  display: block;
+  cursor: pointer;
+}
+/* line 122, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_select_int li:last-child {
+  border-radius: 3px;
+  border-bottom: 0px;
+}
+/* line 127, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_select_int li:hover {
+  background-color: rgba(255, 187, 88, 0.6);
+}
+/* line 132, ../../sass/blocks/main-shopfront-block1.scss */
+.cont_select_int .active {
+  background-color: #ffbb58;
+}
+
+/* etiqueta <p> con la opcion selecionada  */
+/* line 139, ../../sass/blocks/main-shopfront-block1.scss */
+.selecionado_opcion {
+  padding: 13px 2%;
+  width: 96%;
+  display: block;
+  margin: 0px;
+  cursor: pointer;
+}
+
+/* line 147, ../../sass/blocks/main-shopfront-block1.scss */
+.shopfront_books {
+  display: inline-block;
+}
+
+/* line 151, ../../sass/blocks/main-shopfront-block1.scss */
+.books {
+  width: calc(100% / 6 - 42px);
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+  margin: 50px 46px 0 0;
+  cursor: pointer;
+}
+
+/* line 160, ../../sass/blocks/main-shopfront-block1.scss */
+.books:nth-child(6n) {
+  margin-right: 0;
+}
+
+/* line 164, ../../sass/blocks/main-shopfront-block1.scss */
+figure {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+/* line 172, ../../sass/blocks/main-shopfront-block1.scss */
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 177, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background: rgba(255, 187, 88, 0.9);
+  opacity: 0;
+  transition: opacity .7s;
+  cursor: pointer;
+  font: 32px sans-serif;
+  letter-spacing: 3px;
+}
+
+/* line 192, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption a {
+  font-family: Yrsa;
+  font-size: 23px;
+  color: #555963;
+  position: absolute;
+  width: 30px;
+  bottom: 10px;
+  left: 20px;
+  text-decoration: none;
+}
+
+/* line 203, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption a:hover {
+  color: #fff;
+}
+
+/* line 207, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .look {
+  position: relative;
+  top: 20px;
+  left: 2px;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+/* line 218, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .look img {
+  padding: 15px;
+  max-width: 80%;
+}
+
+/* line 223, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .save {
+  position: relative;
+  display: block;
+  float: left;
+  left: 10px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 40%;
+  height: 20%;
+  max-height: 80px;
+}
+
+/* line 236, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .save img {
+  padding: 15px;
+  max-width: 80%;
+  max-height: 70px;
+}
+
+/* line 242, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .buy {
+  position: relative;
+  display: block;
+  width: 40%;
+  height: 20%;
+  border: 2px solid;
+  float: left;
+  left: 30px;
+  top: 25px;
+  border-radius: 50%;
+}
+
+/* line 254, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .buy img {
+  padding: 15px;
+  max-width: 80%;
+}
+
+/* line 259, ../../sass/blocks/main-shopfront-block1.scss */
+figcaption .look:hover,
+figcaption .save:hover,
+figcaption .buy:hover {
+  border: 2px solid #fff;
+}
+
+/* line 265, ../../sass/blocks/main-shopfront-block1.scss */
+figure:hover figcaption {
+  opacity: 1;
+}
+
+/* line 269, ../../sass/blocks/main-shopfront-block1.scss */
+.books_name {
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+  padding: 10px 0;
+}
+
+/* line 277, ../../sass/blocks/main-shopfront-block1.scss */
+.books_name:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 281, ../../sass/blocks/main-shopfront-block1.scss */
+.author_name {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Amiri, regular;
+  color: #dd9327;
+  padding: 10px 0;
+}
+
+/* line 288, ../../sass/blocks/main-shopfront-block1.scss */
+.author_name:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 292, ../../sass/blocks/main-shopfront-block1.scss */
+.buttom_books {
+  text-decoration: none;
+  width: 200px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-family: Lato, semibold;
+  color: #555963;
+  margin: 20px auto;
+  padding: 16px 62px;
+  border: 2px solid #555963;
+}
+
+/* line 305, ../../sass/blocks/main-shopfront-block1.scss */
+.buttom_books:hover {
+  background-color: rgba(255, 187, 88, 0.6);
+  border-color: orange;
+}
+
+@media (max-width: 1100px) {
+  /* line 311, ../../sass/blocks/main-shopfront-block1.scss */
+  .shopfront nav.navigation li {
+    padding: 10px 13px 15px 13px;
+  }
+
+  /* line 314, ../../sass/blocks/main-shopfront-block1.scss */
+  .select_mate {
+    width: 100px;
+  }
+}
+@media (max-width: 1600px) {
+  /* line 320, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .buy {
+    left: 25px;
+  }
+
+  /* line 324, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .buy img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1350px) {
+  /* line 330, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .look,
+  figcaption .save,
+  figcaption .buy {
+    top: 0;
+  }
+
+  /* line 335, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .look {
+    left: 0;
+  }
+
+  /* line 338, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .save {
+    left: 5px;
+  }
+
+  /* line 341, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .buy {
+    left: 20px;
+  }
+
+  /* line 344, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .save img,
+  figcaption .buy img {
+    max-width: 90%;
+    padding: 12px;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 351, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .save img,
+  figcaption .buy img {
+    margin-top: -5px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  /* line 359, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .look img,
+  figcaption .save img,
+  figcaption .buy img {
+    padding: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  /* line 366, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .save {
+    top: -10px;
+  }
+
+  /* line 369, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .buy {
+    left: 15px;
+    top: -10px;
+  }
+
+  /* line 373, ../../sass/blocks/main-shopfront-block1.scss */
+  figcaption .buy img {
+    max-width: 100%;
+  }
+}

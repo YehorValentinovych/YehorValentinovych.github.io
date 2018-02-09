@@ -1,0 +1,70 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" width="211" height="56.969" viewBox="0 0 211 56.969">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        font-size: 11px;
+        font-family: Lato;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill: #45474b;
+      }
+
+      .cls-1, .cls-2 {
+        text-anchor: middle;
+      }
+
+      .cls-2 {
+        font-size: 29px;
+        font-family: "Rozha One";
+      }
+
+      .cls-3, .cls-5 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        stroke: #45474b;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <text id="All_about_literature" data-name="All about literature" class="cls-1" x="165.692" y="15.891">All about literature</text>
+  <text id="Bookworm" class="cls-2" x="134.936" y="37.299">Bookworm</text>
+  <path id="Line" class="cls-3" d="M451,81H599" transform="translate(-390 -35.031)"/>
+  <g id="Book">
+    <ellipse class="cls-4" cx="21.969" cy="34.969" rx="21.969" ry="22"/>
+    <path class="cls-5" d="M411.083,78.926c-1.288-.816-1.071-2.957-1.071-2.957V45.7a2.627,2.627,0,0,0,.877,1.984c1.436,0.99,5.19.935,5.3,0.934L435,37.986V69.06l-18.81,10.618C416.079,79.622,412.5,79.825,411.083,78.926ZM410.012,44.7v1a6.29,6.29,0,0,1,0-1h0Z" transform="translate(-390 -35.031)"/>
+    <path class="cls-3" d="M432,74V40" transform="translate(-390 -35.031)"/>
+    <path class="cls-3" d="M428.686,37.786L412.144,46.81s-0.442,1.613.811,2.012c1.578,0.5,3.879-.65,3.879-0.65L433,39.54" transform="translate(-390 -35.031)"/>
+  </g>
+</svg>

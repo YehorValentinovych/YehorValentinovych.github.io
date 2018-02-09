@@ -1,0 +1,134 @@
+/* line 1, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront {
+  width: 100%;
+}
+
+/* line 8, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront h2 {
+  text-align: center;
+  font-size: 42px;
+  font-family: 'Ramaraja', serif;
+  color: #555963;
+  margin-bottom: 65px;
+}
+
+/* line 16, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront_menu {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 73px;
+}
+
+/* line 22, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront nav.navigation {
+  float: left;
+}
+
+/* line 27, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront nav.navigation ul {
+  display: inline-block;
+  border-bottom: 1px solid #555963;
+}
+
+/* line 32, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront nav.navigation li {
+  display: inline-block;
+  padding: 10px 20px 15px 20px;
+}
+
+/* line 37, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront nav.navigation li:hover {
+  border-bottom: 2px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-bottom: 13px;
+  background-color: rgba(255, 187, 88, 0.6);
+}
+
+/* line 45, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront .navigation li a {
+  text-decoration: none;
+  font-family: 'Lato', regular;
+  font-size: 16px;
+  color: #555963;
+}
+
+/* line 52, ../../sass/blocks/main-shopfront-block.scss */
+select#popular {
+  float: right;
+  font-size: 16px;
+  color: #45474b;
+  font-family: 'Lato';
+  border: none;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #555963;
+}
+
+/* line 62, ../../sass/blocks/main-shopfront-block.scss */
+.shopfront_books {
+  display: inline-block;
+}
+
+/* line 66, ../../sass/blocks/main-shopfront-block.scss */
+.books {
+  width: calc(100% / 6 - 42px);
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+  margin: 50px 46px 0 0;
+  cursor: pointer;
+}
+
+/* line 75, ../../sass/blocks/main-shopfront-block.scss */
+.books:nth-child(6n) {
+  margin-right: 0;
+}
+
+/* line 79, ../../sass/blocks/main-shopfront-block.scss */
+.books img {
+  width: 100%;
+}
+
+/* line 83, ../../sass/blocks/main-shopfront-block.scss */
+.books_name {
+  font-size: 21px;
+  font-family: 'Ramaraja', serif;
+  color: #555963;
+  padding: 10px 0;
+}
+
+/* line 90, ../../sass/blocks/main-shopfront-block.scss */
+.author_name {
+  font-size: 16px;
+  font-family: 'Amiri', regular;
+  color: #dd9327;
+  padding: 10px 0;
+}
+
+/* line 97, ../../sass/blocks/main-shopfront-block.scss */
+.buttom_books {
+  text-decoration: none;
+  width: 200px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Lato' semibold;
+  color: #555963;
+  margin: 20px auto;
+  padding: 16px 62px;
+  border: 2px solid #555963;
+}
+
+/* line 110, ../../sass/blocks/main-shopfront-block.scss */
+.buttom_books:hover {
+  background-color: rgba(255, 187, 88, 0.6);
+  border-color: orange;
+}
+
+@media (max-width: 1100px) {
+  /* line 116, ../../sass/blocks/main-shopfront-block.scss */
+  select#popular {
+    display: none;
+  }
+}

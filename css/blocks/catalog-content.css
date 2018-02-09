@@ -1,0 +1,65 @@
+/* line 1, ../../sass/blocks/catalog-content.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../sass/blocks/catalog-content.scss */
+body {
+  font-family: Ramaraja, Yrsa, serif;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* line 15, ../../sass/blocks/catalog-content.scss */
+.content {
+  float: right;
+  height: auto;
+  width: 71%;
+  max-width: 1126px;
+}
+
+/* line 23, ../../sass/blocks/catalog-content.scss */
+.wrap {
+  width: 100%;
+  padding: 0 8%;
+  display: inline-block;
+}
+
+/* line 29, ../../sass/blocks/catalog-content.scss */
+.wrap h2 {
+  padding-top: 227px;
+  text-align: center;
+  font-size: 42px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+  margin-bottom: 65px;
+}
+
+/* line 38, ../../sass/blocks/catalog-content.scss */
+.sorting {
+  width: 100%;
+  min-height: 148px;
+  margin-bottom: 50px;
+  height: auto;
+  text-align: right;
+}
+
+/* line 46, ../../sass/blocks/catalog-content.scss */
+.content hr {
+  display: block;
+  margin: 60px 0;
+  height: 1.5px;
+  border: none;
+  background-color: #ECECED;
+}
+
+@media (max-width: 1200px) {
+  /* line 55, ../../sass/blocks/catalog-content.scss */
+  .wrap {
+    padding: 0 5%;
+  }
+}

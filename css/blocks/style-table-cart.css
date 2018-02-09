@@ -1,0 +1,363 @@
+/* line 1, ../../sass/blocks/style-table-cart.scss */
+.wrapper_table {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 6, ../../sass/blocks/style-table-cart.scss */
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  padding-top: 200px;
+}
+
+/* line 13, ../../sass/blocks/style-table-cart.scss */
+th {
+  padding: 8px 5px;
+  color: #555963;
+  font-family: Ramaraja;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  font-weight: normal;
+  background: white;
+}
+
+/* line 24, ../../sass/blocks/style-table-cart.scss */
+tbody tr {
+  border-bottom: 20px solid white;
+  background-color: #F5FDFF;
+}
+
+/* line 29, ../../sass/blocks/style-table-cart.scss */
+table tr:hover {
+  background-color: #DDF9FF;
+}
+
+/* line 33, ../../sass/blocks/style-table-cart.scss */
+.table_header {
+  font-family: Ramaraja, serif;
+  font-size: 18px;
+  color: #555963;
+  border-bottom: 20px solid transparent;
+}
+
+/* line 40, ../../sass/blocks/style-table-cart.scss */
+.table_header .quantily {
+  text-align: center;
+}
+
+/* line 44, ../../sass/blocks/style-table-cart.scss */
+td {
+  font-family: Lato, regular;
+  font-size: 15px;
+  line-height: 32px;
+  color: #555963;
+}
+
+/* line 51, ../../sass/blocks/style-table-cart.scss */
+td a {
+  text-decoration: none;
+}
+
+/* line 55, ../../sass/blocks/style-table-cart.scss */
+.delete {
+  width: 4.1%;
+}
+
+/* line 59, ../../sass/blocks/style-table-cart.scss */
+.delete img {
+  display: block;
+  min-width: 13px;
+  margin: 0 auto;
+}
+
+/* line 65, ../../sass/blocks/style-table-cart.scss */
+.product {
+  padding: 0;
+  width: 60px;
+  padding-left: 5px;
+}
+
+/* line 71, ../../sass/blocks/style-table-cart.scss */
+.product img {
+  padding: 25px 0 24px 0;
+}
+
+/* line 75, ../../sass/blocks/style-table-cart.scss */
+.name_book {
+  padding-left: 19px;
+  min-width: 145px;
+  width: 30%;
+  padding-right: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* line 84, ../../sass/blocks/style-table-cart.scss */
+.name_book a {
+  text-decoration: none;
+  display: block;
+  font-family: Ramaraja;
+  font-size: 19px;
+  line-height: 21px;
+  color: #45474b;
+  position: relative;
+  top: 25px;
+}
+
+/* line 95, ../../sass/blocks/style-table-cart.scss */
+.name_book a:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 99, ../../sass/blocks/style-table-cart.scss */
+td p.name_author {
+  font-family: Amiri, regular;
+  font-size: 15px;
+  line-height: 23px;
+  color: #dd9327;
+  position: relative;
+  top: 25px;
+}
+
+/* line 108, ../../sass/blocks/style-table-cart.scss */
+.format {
+  width: 25%;
+  padding: 0 10px;
+  text-align: left;
+}
+
+/* line 114, ../../sass/blocks/style-table-cart.scss */
+.language {
+  padding: 0 10px;
+  width: 15%;
+  text-align: left;
+}
+
+/* line 120, ../../sass/blocks/style-table-cart.scss */
+.quantily {
+  width: 15%;
+  min-width: 83px;
+}
+
+/* line 125, ../../sass/blocks/style-table-cart.scss */
+.goods-count {
+  text-align: center;
+  font-size: 25px;
+  font-family: Yrsa;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+/* line 135, ../../sass/blocks/style-table-cart.scss */
+span.amount {
+  cursor: pointer;
+  padding: 10px;
+  width: 16px;
+}
+
+/* line 141, ../../sass/blocks/style-table-cart.scss */
+.down {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+}
+
+/* line 147, ../../sass/blocks/style-table-cart.scss */
+.up {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
+}
+
+/* line 153, ../../sass/blocks/style-table-cart.scss */
+.price {
+  text-align: right;
+  padding-right: 27px;
+  width: 10%;
+}
+
+/* line 159, ../../sass/blocks/style-table-cart.scss */
+.goods-price, .sum {
+  font-size: 25px;
+  font-family: Yrsa;
+  font-style: medium;
+}
+
+/* line 165, ../../sass/blocks/style-table-cart.scss */
+.quantily input.counter,
+.quantily input.counter2,
+.quantily input.counter3 {
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  text-align: center;
+  font-family: Yrsa, serif;
+  font-size: 25px;
+  color: #555963;
+}
+
+/* line 177, ../../sass/blocks/style-table-cart.scss */
+.wrap_buttom_form {
+  width: 100%;
+  height: auto;
+  margin: 100px 0;
+}
+
+/* line 187, ../../sass/blocks/style-table-cart.scss */
+.wrap_buttom_form .coupon_code {
+  float: left;
+  width: 35%;
+}
+
+/* line 193, ../../sass/blocks/style-table-cart.scss */
+.coupon_form {
+  border-bottom: 2px solid #555963;
+  padding: 10px 0;
+}
+
+/* line 198, ../../sass/blocks/style-table-cart.scss */
+.coupon_form input#coupon {
+  background-color: transparent;
+  outline: none;
+  width: 66%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  color: #da8913;
+  border: none;
+}
+
+/* line 209, ../../sass/blocks/style-table-cart.scss */
+.coupon_form:hover, .coupon_form:focus, .coupon_form:active {
+  border-bottom: 2px solid #ffbb58;
+}
+
+/* line 213, ../../sass/blocks/style-table-cart.scss */
+.coupon_button {
+  float: right;
+  width: 34%;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  background-color: transparent;
+  color: #45474b;
+  border: none;
+  border-left: 1px solid;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* line 226, ../../sass/blocks/style-table-cart.scss */
+.coupon_button:hover, .coupon_button:active, .coupon_button:focus {
+  outline: none;
+  color: #ffbb58;
+}
+
+/* line 231, ../../sass/blocks/style-table-cart.scss */
+.coupon_button img {
+  margin-left: 15px;
+}
+
+/* line 235, ../../sass/blocks/style-table-cart.scss */
+.coupon_code p {
+  margin: 50px 0;
+  font-size: 19px;
+  font-family: Yrsa;
+  font-variant: regular;
+  color: #555963;
+}
+
+/* line 243, ../../sass/blocks/style-table-cart.scss */
+.wrap_total_cost {
+  width: 40%;
+  min-width: 215px;
+  float: right;
+}
+
+/* line 249, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total {
+  width: 40%;
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 255, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total table tr {
+  background-color: transparent;
+}
+
+/* line 259, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total .subtotal_block {
+  font-family: Ramaraja;
+  font-size: 21px;
+  color: #45474b;
+}
+
+/* line 265, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total .subtotal_cost {
+  font-family: Yrsa;
+  font-size: 25px;
+  color: #555963;
+}
+
+/* line 271, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total .total_block {
+  font-family: Ramaraja;
+  font-size: 28px;
+  color: #45474b;
+}
+
+/* line 277, ../../sass/blocks/style-table-cart.scss */
+.wrap_table_total .total_cost {
+  font-family: Yrsa;
+  font-size: 31px;
+  color: #555963;
+}
+
+/* line 283, ../../sass/blocks/style-table-cart.scss */
+.wrap_total_cost .checkout_bottom {
+  width: 40%;
+  height: 40px;
+  border: 2px solid #45474b;
+  background-color: transparent;
+  font-family: Lato;
+  font-size: 16px;
+  color: #45474b;
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* line 296, ../../sass/blocks/style-table-cart.scss */
+.wrap_total_cost .checkout_bottom:hover {
+  border: 2px solid #ffbb58;
+  background-color: rgba(255, 187, 88, 0.6);
+}
+
+@media (max-width: 1060px) {
+  /* line 302, ../../sass/blocks/style-table-cart.scss */
+  .wrap_buttom_form .coupon_code {
+    min-width: 230px;
+  }
+
+  /* line 306, ../../sass/blocks/style-table-cart.scss */
+  .coupon_form {
+    min-width: 230px;
+    width: 100%;
+  }
+
+  /* line 311, ../../sass/blocks/style-table-cart.scss */
+  .coupon_form input#coupon {
+    width: 59%;
+  }
+
+  /* line 315, ../../sass/blocks/style-table-cart.scss */
+  .coupon_button {
+    width: 41%;
+    max-height: 19px;
+    padding-left: 8%;
+  }
+}

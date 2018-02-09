@@ -1,0 +1,136 @@
+/* line 26, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar {
+  width: 256px;
+  float: left;
+  display: block;
+}
+
+/* line 32, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar nav.category {
+  display: block;
+}
+
+/* line 36, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar nav.category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 42, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar nav.category li {
+  height: auto;
+  padding: 0 29px;
+  color: #555963;
+}
+
+/* line 48, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar nav.category li:hover {
+  /*background-color: #ffbb58;*/
+}
+
+/* line 52, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .category .menu a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: bold;
+  font-size: 16px;
+  color: #555963;
+  background-color: transparent;
+  font-variant: regular;
+  display: block;
+  padding: 0 0px;
+  line-height: 40px;
+}
+
+/* line 65, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .category .menu a:hover {
+  color: #555963;
+  background-color: rgba(255, 187, 88, 0.6);
+  text-decoration: none;
+}
+
+/* line 70, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .category .menu a:link {
+  color: #555963;
+  text-decoration: none;
+}
+
+/* line 74, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .category .menu a:focus {
+  color: #555963;
+  background-color: #ffbb58;
+  text-decoration: none;
+}
+
+/* line 80, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar hr {
+  display: block;
+  margin: 60px 20px;
+  height: 1.5px;
+  border: none;
+  background-color: #ECECED;
+}
+
+/* line 88, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .pop-writers {
+  padding: 0 0 0 29px;
+}
+
+/* line 92, ../../sass/blocks/sidebar-catalog.scss */
+.sitebar .pop-writers h3 {
+  text-align: left;
+  font-size: 28px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+  margin-bottom: 32px;
+}
+
+/* line 100, ../../sass/blocks/sidebar-catalog.scss */
+.pop-writers .writers {
+  margin-bottom: 24px;
+  font-size: 12px;
+  font-family: Lato, serif;
+  color: #a8a8a8;
+}
+
+/* line 107, ../../sass/blocks/sidebar-catalog.scss */
+.pop-writers .writers img {
+  position: relative;
+  top: -7px;
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 6px 18px 0 0;
+}
+
+/* line 117, ../../sass/blocks/sidebar-catalog.scss */
+.pop-writers .writers a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: Amiri, serif;
+  color: #dd9327;
+  vertical-align: top;
+}
+
+/* line 125, ../../sass/blocks/sidebar-catalog.scss */
+.pop-writers .writers a:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 129, ../../sass/blocks/sidebar-catalog.scss */
+.pop-writers .writers p {
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: Lato, serif;
+  color: #a8a8a8;
+}
+
+@media (max-width: 1000px) {
+  /* line 136, ../../sass/blocks/sidebar-catalog.scss */
+  .sitebar {
+    width: 235px;
+  }
+}

@@ -1,0 +1,35 @@
+/* line 1, ../../sass/blocks/content-main.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../sass/blocks/content-main.scss */
+body {
+  font-family: Ramaraja, Yrsa, serif;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* line 15, ../../sass/blocks/content-main.scss */
+#wrapper_content {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* line 21, ../../sass/blocks/content-main.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 26, ../../sass/blocks/content-main.scss */
+.conteiner {
+  width: 100%;
+  padding: 0 8%;
+  background-color: white;
+}

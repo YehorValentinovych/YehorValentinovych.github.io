@@ -1,0 +1,344 @@
+/* line 1, ../../sass/blocks/header.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../../sass/blocks/header.scss */
+body {
+  font-family: Ramaraja, Yrsa, serif;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 16px;
+  overflow: auto;
+}
+
+/* line 15, ../../sass/blocks/header.scss */
+#wrapper_content {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* line 21, ../../sass/blocks/header.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+/* line 27, ../../sass/blocks/header.scss */
+header.top {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  width: 92%;
+  margin: 17px 50px;
+  height: 98px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 99999;
+}
+
+/* line 45, ../../sass/blocks/header.scss */
+header.top #logo {
+  margin-left: 20px;
+  width: auto;
+  text-decoration: none;
+}
+
+/* line 51, ../../sass/blocks/header.scss */
+header.top nav.navigation {
+  max-width: 1280px;
+  overflow: hidden;
+  /*background-color: #ccc;*/
+}
+
+/* line 57, ../../sass/blocks/header.scss */
+header.top nav.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 63, ../../sass/blocks/header.scss */
+header.top nav.navigation li {
+  float: left;
+  margin: 0 10px;
+  padding: 5px 0;
+}
+
+/* line 69, ../../sass/blocks/header.scss */
+header.top .navigation li a {
+  text-decoration: none;
+  position: relative;
+  text-transform: uppercase;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 14px;
+  color: #45474b;
+}
+
+/*header.top .navigation li a:link {
+	color: #FFC879;
+}*/
+/* line 82, ../../sass/blocks/header.scss */
+header.top .navigation li a:active {
+  color: #FFC879;
+}
+
+/* line 85, ../../sass/blocks/header.scss */
+header.top .navigation li a:focus {
+  color: #FFC879;
+}
+
+/*header.top .navigation li a:visited:hover{
+	color: #FFC879;
+}*/
+/* line 91, ../../sass/blocks/header.scss */
+header.top .navigation li a:hover:after {
+  top: 20px;
+  position: absolute;
+  content: '';
+  width: 45%;
+  height: 2px;
+  background: #FFC879;
+  left: 1px;
+}
+
+/* line 101, ../../sass/blocks/header.scss */
+.header_menu {
+  width: auto;
+  align-content: center;
+  text-align: center;
+  margin-right: 20px;
+}
+
+/* line 107, ../../sass/blocks/header.scss */
+.mob-menu {
+  position: absolute;
+}
+
+/* line 111, ../../sass/blocks/header.scss */
+.header_menu .box {
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* line 115, ../../sass/blocks/header.scss */
+.header_menu .container-2 {
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  top: -12px;
+  text-decoration: none;
+}
+
+/* line 125, ../../sass/blocks/header.scss */
+.header_menu .container-2 input#search {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  font-size: 10pt;
+  color: #262626;
+  padding-left: 35px;
+  color: #fff;
+  -webkit-transition: width .55s ease;
+  -moz-transition: width .55s ease;
+  -ms-transition: width .55s ease;
+  -o-transition: width .55s ease;
+  transition: width .55s ease;
+}
+
+/* line 143, ../../sass/blocks/header.scss */
+.header_menu .container-2 .icon {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  margin-left: 11px;
+  margin-top: 11px;
+  z-index: 1;
+  color: #45474B;
+}
+
+/* line 153, ../../sass/blocks/header.scss */
+.header_menu .container-2 input#search:focus, .container-2 input#search:active {
+  outline: none;
+  width: 150px;
+  border-radius: 15px;
+  background: #FFBB58;
+}
+
+/* line 160, ../../sass/blocks/header.scss */
+.header_menu .container-2:hover input#search {
+  width: 150px;
+  border-radius: 15px;
+  background: #ffbb58;
+  transition: 0.5s;
+}
+
+/* line 167, ../../sass/blocks/header.scss */
+.header_menu .container-2:hover .icon {
+  color: #93a2ad;
+}
+
+/*****/
+/* line 171, ../../sass/blocks/header.scss */
+.header_menu .shopping_cart {
+  display: inline-block;
+  text-decoration: none;
+  /*float: left;*/
+  height: 35px;
+  margin: 0 13px;
+}
+
+/* line 179, ../../sass/blocks/header.scss */
+.header_menu .shopping_cart img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+/* line 184, ../../sass/blocks/header.scss */
+.header_menu .userpic {
+  display: inline-block;
+  margin: 0 13px;
+  -moz-transition: all 1s 0.1s ease-in;
+  -o-transition: all 1s 0.1s ease-in;
+  -webkit-transition: all 1s 0.1s ease-in;
+}
+
+/* line 191, ../../sass/blocks/header.scss */
+.header_menu .userpic:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+/* line 197, ../../sass/blocks/header.scss */
+.header_menu .userpic img {
+  border-radius: 50%;
+  width: 35px;
+  height: 33px;
+}
+
+@media (max-width: 1000px) and (min-width: 100px) {
+  /* line 204, ../../sass/blocks/header.scss */
+  header.top {
+    width: 97%;
+    margin: 10px;
+  }
+
+  /* line 209, ../../sass/blocks/header.scss */
+  header.top nav.navigation {
+    display: none;
+  }
+
+  /* line 213, ../../sass/blocks/header.scss */
+  .header_menu {
+    display: none;
+  }
+
+  /* line 217, ../../sass/blocks/header.scss */
+  .mob-menu {
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+    width: 30px;
+    height: 30px;
+    margin: 32px 30px;
+  }
+
+  /* line 226, ../../sass/blocks/header.scss */
+  .mob-menu span {
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+  }
+
+  /* line 231, ../../sass/blocks/header.scss */
+  .mob-menu span:before, .mob-menu span:after {
+    position: absolute;
+    content: '';
+  }
+
+  /* line 235, ../../sass/blocks/header.scss */
+  .mob-menu span, .mob-menu span:before, .mob-menu span:after {
+    width: 30px;
+    height: 6px;
+    background-color: #555963;
+    display: block;
+  }
+
+  /* line 241, ../../sass/blocks/header.scss */
+  .mob-menu span:before {
+    margin-top: -12px;
+  }
+
+  /* line 244, ../../sass/blocks/header.scss */
+  .mob-menu span:after {
+    margin-top: 12px;
+  }
+
+  /* line 248, ../../sass/blocks/header.scss */
+  .example5 span {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  /* line 252, ../../sass/blocks/header.scss */
+  .example5:hover span {
+    background-color: transparent;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+
+  /* line 256, ../../sass/blocks/header.scss */
+  .example5 span:before {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+  }
+
+  /* line 261, ../../sass/blocks/header.scss */
+  .example5:hover span:before {
+    margin-top: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+  }
+
+  /* line 266, ../../sass/blocks/header.scss */
+  .example5 span:after {
+    -webkit-transition-property: margin, -webkit-transform;
+    transition-property: margin, transform;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+  }
+
+  /* line 271, ../../sass/blocks/header.scss */
+  .example5:hover span:after {
+    margin-top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition-delay: 0s, 0.2s;
+    transition-delay: 0s, 0.2s;
+  }
+}

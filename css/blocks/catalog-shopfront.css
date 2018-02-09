@@ -1,0 +1,243 @@
+/* line 1, ../../sass/blocks/catalog-shopfront.scss */
+.shopfront_books {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 6, ../../sass/blocks/catalog-shopfront.scss */
+.books {
+  width: calc(100% / 4 - 38px);
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: center;
+  margin: 50px 46px 0 0;
+  cursor: pointer;
+}
+
+/* line 16, ../../sass/blocks/catalog-shopfront.scss */
+.books:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* line 20, ../../sass/blocks/catalog-shopfront.scss */
+figure {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+/* line 28, ../../sass/blocks/catalog-shopfront.scss */
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 33, ../../sass/blocks/catalog-shopfront.scss */
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background: rgba(255, 187, 88, 0.9);
+  opacity: 0;
+  transition: opacity .7s;
+  cursor: pointer;
+  font: 32px sans-serif;
+  letter-spacing: 3px;
+}
+
+/* line 48, ../../sass/blocks/catalog-shopfront.scss */
+figcaption a {
+  font-family: Yrsa;
+  font-size: 23px;
+  color: #555963;
+  position: absolute;
+  width: 30px;
+  bottom: 10px;
+  left: 20px;
+  text-decoration: none;
+}
+
+/* line 59, ../../sass/blocks/catalog-shopfront.scss */
+figcaption a:hover {
+  color: #fff;
+}
+
+/* line 63, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .look {
+  position: relative;
+  top: 20px;
+  left: 2px;
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+  border: 2px solid;
+  border-radius: 50%;
+}
+
+/* line 74, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .look img {
+  padding: 15px;
+  max-width: 80%;
+}
+
+/* line 79, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .save {
+  position: relative;
+  display: block;
+  float: left;
+  left: 10px;
+  top: 25px;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 40%;
+  height: 20%;
+  max-height: 80px;
+}
+
+/* line 92, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .save img {
+  padding: 15px;
+  max-width: 80%;
+  max-height: 70px;
+}
+
+/* line 98, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .buy {
+  position: relative;
+  display: block;
+  width: 40%;
+  height: 20%;
+  border: 2px solid;
+  float: left;
+  left: 30px;
+  top: 25px;
+  border-radius: 50%;
+}
+
+/* line 110, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .buy img {
+  padding: 15px;
+  max-width: 80%;
+}
+
+/* line 115, ../../sass/blocks/catalog-shopfront.scss */
+figcaption .look:hover,
+figcaption .save:hover,
+figcaption .buy:hover {
+  border: 2px solid #fff;
+}
+
+/* line 121, ../../sass/blocks/catalog-shopfront.scss */
+figure:hover figcaption {
+  opacity: 1;
+}
+
+/* line 125, ../../sass/blocks/catalog-shopfront.scss */
+.books_name {
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+  padding: 10px 0;
+}
+
+/* line 133, ../../sass/blocks/catalog-shopfront.scss */
+.books_name:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 137, ../../sass/blocks/catalog-shopfront.scss */
+.author_name {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Amiri, regular;
+  color: #dd9327;
+  padding: 10px 0;
+}
+
+/* line 144, ../../sass/blocks/catalog-shopfront.scss */
+.author_name:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+@media (max-width: 1600px) {
+  /* line 149, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .buy {
+    left: 25px;
+  }
+
+  /* line 153, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .buy img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1350px) {
+  /* line 159, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .look,
+  figcaption .save,
+  figcaption .buy {
+    top: 0;
+  }
+
+  /* line 164, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .look {
+    left: 0;
+  }
+
+  /* line 167, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .save {
+    left: 5px;
+  }
+
+  /* line 170, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .buy {
+    left: 20px;
+  }
+
+  /* line 173, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .save img,
+  figcaption .buy img {
+    max-width: 90%;
+    padding: 12px;
+  }
+}
+@media (max-width: 1250px) {
+  /* line 180, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .save img,
+  figcaption .buy img {
+    margin-top: -5px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  /* line 188, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .look img,
+  figcaption .save img,
+  figcaption .buy img {
+    padding: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  /* line 195, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .save {
+    top: -10px;
+  }
+
+  /* line 198, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .buy {
+    left: 15px;
+    top: -10px;
+  }
+
+  /* line 202, ../../sass/blocks/catalog-shopfront.scss */
+  figcaption .buy img {
+    max-width: 100%;
+  }
+}

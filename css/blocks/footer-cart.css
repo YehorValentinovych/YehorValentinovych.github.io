@@ -1,0 +1,333 @@
+/* line 1, ../../sass/blocks/footer-cart.scss */
+footer.cart {
+  background-color: #F5FDFF;
+  margin-top: 50px;
+  display: inline-block;
+  padding: 0 8%;
+  min-width: 640px;
+}
+
+/* line 9, ../../sass/blocks/footer-cart.scss */
+.footer_cart_menu {
+  width: 100%;
+  padding: 46px 0;
+  border-bottom: 1.3px solid gray;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* line 16, ../../sass/blocks/footer-cart.scss */
+.footer_cart_menu ul {
+  text-decoration: none;
+  height: 20px;
+}
+
+/* line 20, ../../sass/blocks/footer-cart.scss */
+.footer_cart_menu li {
+  list-style-type: none;
+  float: left;
+  margin-right: 40px;
+}
+
+/* line 25, ../../sass/blocks/footer-cart.scss */
+.footer_cart_menu a {
+  text-decoration: none;
+  font-family: Lato, bold;
+  font-size: 14px;
+  color: #555963;
+}
+
+/* line 31, ../../sass/blocks/footer-cart.scss */
+.footer_cart_menu a:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 35, ../../sass/blocks/footer-cart.scss */
+.footer_section_top {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* line 43, ../../sass/blocks/footer-cart.scss */
+.footer_contentl {
+  float: left;
+  width: 50%;
+  max-width: 550px;
+  box-sizing: border-box;
+}
+
+/* line 50, ../../sass/blocks/footer-cart.scss */
+.footer_contentl h3 {
+  font-family: Ramaraja;
+  color: #555963;
+  font-size: 28px;
+  margin-bottom: 21px;
+}
+
+/* line 57, ../../sass/blocks/footer-cart.scss */
+.footer_contentl p {
+  font-family: Yrsa;
+  color: #555963;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+/* line 64, ../../sass/blocks/footer-cart.scss */
+.footer_contentr {
+  float: right;
+  min-width: 395px;
+  width: 35%;
+}
+
+/* line 70, ../../sass/blocks/footer-cart.scss */
+.footer_mail_form {
+  width: 100%;
+  min-width: 395px;
+  float: right;
+}
+
+/* line 76, ../../sass/blocks/footer-cart.scss */
+.footer_mail_form h3 {
+  font-family: Ramaraja;
+  color: #555963;
+  font-size: 28px;
+  margin-bottom: 21px;
+}
+
+/* line 83, ../../sass/blocks/footer-cart.scss */
+.email_form {
+  border-bottom: 2px solid #555963;
+  padding: 10px 0;
+}
+
+/* line 88, ../../sass/blocks/footer-cart.scss */
+.email_form input#email {
+  background-color: transparent;
+  outline: none;
+  width: 66%;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  color: #da8913;
+  border: none;
+}
+
+/* line 99, ../../sass/blocks/footer-cart.scss */
+.email_form:hover, .email_form:focus, .email_form:active {
+  border-bottom: 2px solid #ffbb58;
+}
+
+/* line 103, ../../sass/blocks/footer-cart.scss */
+.subscribe_button {
+  float: right;
+  width: 34%;
+  font-size: 16px;
+  font-family: Lato sans-serif;
+  background-color: #f2fdff;
+  color: #45474b;
+  border: none;
+  border-left: 1px solid;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+/* line 116, ../../sass/blocks/footer-cart.scss */
+.subscribe_button:hover, .subscribe_button:active, .subscribe_button:focus {
+  outline: none;
+  color: #ffbb58;
+}
+
+/* line 121, ../../sass/blocks/footer-cart.scss */
+.subscribe_button img {
+  margin-left: 15px;
+}
+
+/* line 125, ../../sass/blocks/footer-cart.scss */
+.footer_section_bottom {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
+  height: auto;
+}
+
+/* line 133, ../../sass/blocks/footer-cart.scss */
+.footer_link {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 140, ../../sass/blocks/footer-cart.scss */
+.footer_contentl .footer_link a {
+  text-decoration: none;
+  font-family: Ramaraja;
+  color: #555963;
+  font-size: 21px;
+}
+
+/* line 147, ../../sass/blocks/footer-cart.scss */
+.footer_contentl .footer_link a:hover {
+  color: rgba(255, 187, 88, 0.9);
+}
+
+/* line 151, ../../sass/blocks/footer-cart.scss */
+.footer_contentl .footer_link p {
+  font-family: Lato;
+  /* Regular */
+  font-size: 14px;
+  color: #555963;
+  display: block;
+  width: 100%;
+}
+
+/* line 159, ../../sass/blocks/footer-cart.scss */
+.wrap_followus {
+  width: 100%;
+}
+
+/* line 163, ../../sass/blocks/footer-cart.scss */
+.wrap_followus h3 {
+  font-family: Ramaraja;
+  color: #555963;
+  font-size: 28px;
+  margin-bottom: 37px;
+}
+
+/* line 170, ../../sass/blocks/footer-cart.scss */
+.wrap_followus a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 181, ../../sass/blocks/footer-cart.scss */
+.wrap_followus a:hover {
+  border: 2px solid rgba(255, 187, 88, 0.9);
+}
+
+/* line 185, ../../sass/blocks/footer-cart.scss */
+.wrap_followus a img {
+  width: 100%;
+}
+
+/* line 189, ../../sass/blocks/footer-cart.scss */
+.block_hidden {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin-top: 50px;
+}
+
+/* line 197, ../../sass/blocks/footer-cart.scss */
+.footer_sign {
+  float: left;
+  margin-right: 15px;
+  min-width: 254px;
+  font-size: 15px;
+  font-family: Lato, regular;
+  color: #555963;
+  z-index: 2;
+}
+
+/* line 206, ../../sass/blocks/footer-cart.scss */
+.block_hidden hr {
+  display: inline-block;
+  position: absolute;
+  width: 83%;
+  size: 4px;
+  margin: 10px 0;
+  color: #D2D9DB;
+  z-index: 1;
+}
+
+@media (max-width: 1600px) {
+  /* line 217, ../../sass/blocks/footer-cart.scss */
+  .block_hidden hr {
+    width: 80%;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 223, ../../sass/blocks/footer-cart.scss */
+  .block_hidden hr {
+    width: 75%;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 229, ../../sass/blocks/footer-cart.scss */
+  footer.hom {
+    padding: 0 5%;
+  }
+
+  /* line 231, ../../sass/blocks/footer-cart.scss */
+  .block_hidden hr {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 237, ../../sass/blocks/footer-cart.scss */
+  .footer_cart_menu li {
+    margin-right: 30px;
+  }
+
+  /* line 241, ../../sass/blocks/footer-cart.scss */
+  .footer_mail_form {
+    min-width: 35%;
+  }
+
+  /* line 245, ../../sass/blocks/footer-cart.scss */
+  .email_form {
+    min-width: 230px;
+    width: 100%;
+  }
+
+  /* line 250, ../../sass/blocks/footer-cart.scss */
+  .email_form input#email {
+    width: 59%;
+  }
+
+  /* line 254, ../../sass/blocks/footer-cart.scss */
+  .subscribe_button {
+    width: 41%;
+    max-height: 19px;
+    padding-left: 5%;
+  }
+
+  /* line 259, ../../sass/blocks/footer-cart.scss */
+  .subscribe_button img {
+    margin-left: 5px;
+    position: relative;
+    top: 3px;
+  }
+
+  /* line 265, ../../sass/blocks/footer-cart.scss */
+  .footer_contentl {
+    width: 40%;
+  }
+
+  /* line 269, ../../sass/blocks/footer-cart.scss */
+  .footer_contentl .footer_link {
+    width: calc(100% / 3 - 20px);
+    min-width: 79px;
+  }
+
+  /* line 274, ../../sass/blocks/footer-cart.scss */
+  .footer_contentr {
+    min-width: 50%;
+  }
+
+  /* line 277, ../../sass/blocks/footer-cart.scss */
+  .block_hidden hr {
+    width: 67%;
+  }
+}

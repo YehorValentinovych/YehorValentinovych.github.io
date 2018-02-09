@@ -1,0 +1,99 @@
+/* line 1, ../../sass/blocks/style-popular.scss */
+.popular {
+  width: 100%;
+  min-height: 250px;
+  height: auto;
+  margin-bottom: 109px;
+}
+
+/* line 8, ../../sass/blocks/style-popular.scss */
+.popular .popular_book {
+  float: left;
+  width: 535px;
+  height: 205px;
+  background-color: #F2FDFF;
+}
+
+/* line 15, ../../sass/blocks/style-popular.scss */
+.popular_book .title_popular {
+  padding: 35px 34px 24px 34px;
+  font-size: 28px;
+  font-family: Ramaraja, serif;
+  color: #555963;
+}
+
+/* line 22, ../../sass/blocks/style-popular.scss */
+.title_popular .author_popular {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 18px;
+  font-family: Amiri, regular;
+  color: #eaad54;
+}
+
+/* line 30, ../../sass/blocks/style-popular.scss */
+.popular_book .popular_book_img {
+  display: inline-block;
+  position: relative;
+  top: -142px;
+  left: 330px;
+  z-index: 2;
+}
+
+/* line 38, ../../sass/blocks/style-popular.scss */
+.popular .popular_theme {
+  float: right;
+  width: 535px;
+  height: 205px;
+  background-color: #F2FDFF;
+}
+
+/* line 45, ../../sass/blocks/style-popular.scss */
+.popular_theme .title_popular_theme {
+  margin: 40px 34px;
+  font-size: 28px;
+  line-height: 30px;
+  color: #555963;
+}
+
+/* line 53, ../../sass/blocks/style-popular.scss */
+.popular_theme .popular_theme_img {
+  display: inline-block;
+  position: relative;
+  top: -175px;
+  left: 310px;
+  z-index: 2;
+}
+
+@media (max-width: 1350px) {
+  /* line 62, ../../sass/blocks/style-popular.scss */
+  .popular .popular_book {
+    width: 45%;
+    margin-right: 80px;
+  }
+
+  /* line 67, ../../sass/blocks/style-popular.scss */
+  .popular .popular_theme {
+    width: 45%;
+  }
+}
+@media (max-width: 1100px) {
+  /* line 74, ../../sass/blocks/style-popular.scss */
+  .popular {
+    min-height: 520px;
+  }
+
+  /* line 78, ../../sass/blocks/style-popular.scss */
+  .popular .popular_book {
+    display: block;
+    width: 60%;
+    margin-bottom: 80px;
+  }
+
+  /* line 84, ../../sass/blocks/style-popular.scss */
+  .popular .popular_theme {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
