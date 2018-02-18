@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel ="stylesheet" type ="text/css" href ="css/blocks/style-cart.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Oswald:200,300,400,500,600,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ramaraja|Righteous|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Yrsa" rel="stylesheet">
+	<meta name="description" content="Web development">
+	<meta name="keywords" content="Web and Mobile development">
+	<meta name="author" content="Yehor Valentiukevych">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="top">
+		<a href="#" id="logo">
+			<img src="images/logo.svg" alt="logotype">
+		</a>
+		<nav class="navigation">
+			<ul class="menu">
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Writers</a></li>
+				<li><a href="#">Publishers</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header_menu">
+			<div class="box">
+			  <a href="#" class="container-2">
+			      <span class="icon"><img src="images/rectangle3.svg" alt="search"></span>
+			      <input type="search" id="search" placeholder="Search..." />
+			  </a>
+			</div>
+			<a href="#" class="shopping_cart">
+				<img src="images/rectangle2.svg" alt="shopping cart">
+			</a>
+			<a href="#popup1" class="userpic">
+				<img src="images/userpic.png" alt="user">
+			</a>	
+		</div><!-- /header_menu -->
+		<a href="#popup2" class="mob-menu example5"><span></span></a> 
+	</header>
+<div class="wrapper_cart"><!--wrapper_cart-->
+	<h1>Your cart</h1>
+	<form action="" id="basket">
+		<div class="wrapper_table">
+			<table>
+		  		<thead>
+		  			<tr class="table_header">
+						<!-- <th colspan="3">Product</th> -->
+						<th class="delete"></th>
+						<th class="product">Product</th>
+						<th class="name_book"></th>
+						<th class="format">Format</th> 
+						<th class="language">Language</th>
+						<th class="quantily">Quantily</th>
+						<th class="price">Price</th>
+		  			</tr>
+		  		</thead>
+		  		<tbody>
+		  			<tr>
+						<td class="delete"><a href="#"><img src="images/delate_product.png" alt="delete"></a></td>
+						<td class="product"><img src="images/shopfront/book2.png" alt="book" width="60px" height="93px" data-price="25"></td>
+						<td class="name_book">
+							<a href="#">The Meandering Corpse</a>
+							<p class="name_author">Richard S. Prather</p>
+						</td>
+						<td class="format">Hardback, 170x 215 mm</td>
+						<td class="language">English</td>
+						<td class="quantily">
+							<div class="goods" unselectable="on">
+							    <div class="goods-count">
+							        <span class="amount">
+							            <span class="down">-</span>
+							            <input type="text" class="counter" value="1" data-price="25" data-count="1"/>
+							            <span class="up">+</span>
+							        </span>
+							    </div>
+							</div>
+						</td>
+						<td class="price">
+							<div class="goods-price">$<span class="sum">25</span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="delete"><a href="#"><img src="images/delate_product.png" alt="delete"></a></td>
+						<td class="product"><img src="images/shopfront/book3.png" alt="book" width="60px" height="93px" data-price="30"></td>
+						<td class="name_book">
+							<a href="#">English Detective Stories</a>
+							<p class="name_author">Patricia Craig</p>
+						</td>
+						<td class="format">Hardback, 170x 215 mm</td>
+						<td class="language">English</td>
+						<td class="quantily">
+							<div class="goods2" unselectable="on">
+							    <div class="goods-count">
+							        <span class="amount">
+							            <span class="down">-</span>
+							            <input type="text" class="counter2" value="1" data-price="30" data-count="1"/>
+							            <span class="up">+</span>
+							        </span>
+							    </div>
+							</div>
+						</td>
+						<td class="price">
+							<div class="goods-price">$<span class="sum2">30</span></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="delete"><a href="#"><img src="images/delate_product.png" alt="delete"></a></td>
+						<td class="product"><img src="images/shopfront/book4.png" alt="book" width="60px" height="93px" data-price="8"></td>
+						<td class="name_book">
+							<a href="#">Die Like a Dog</a>
+							<p class="name_author">Brett Halliday</p>
+						</td>
+						<td class="format">Hardback, 170x 215 mm</td>
+						<td class="language">English</td>
+						<td class="quantily">
+							<div class="goods3" unselectable="on">
+							    <div class="goods-count">
+							        <span class="amount">
+							            <span class="down">-</span>
+							            <input type="text" class="counter3" value="1" data-price="8" data-count="1"/>
+							            <span class="up">+</span>
+							        </span>
+							    </div>
+							</div>
+						</td>
+						<td class="price">
+							<div class="goods-price">$<span class="sum3">8</span></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div> <!-- wrapper_table -->
+	</form>
+
+	<div class="wrap_buttom_form">
+		<div class="coupon_code">
+         <form action="" class="coupon_form">
+         	<input type="text" id="coupon" name="coupon" placeholder="Coupon code">
+         	<button class="coupon_button" type="submit">Apply <img src="images/rectangle45.png" alt="subscribe"></button>
+         </form>
+         <p>Type your coupone code (if you have), and take 20% discount for your order.</p> 
+      </div>
+      <div class="wrap_total_cost">
+         <div class="wrap_table_total">
+            <table>
+               <tr>
+                  <td class="subtotal_block">Subtotal</td>
+                  <td class="subtotal_cost"><span>$</span><span id="subtotal">0</span></td>
+               </tr>
+               <tr>
+                  <td class="total_block">Total</td>
+                  <td class="total_cost"><span>$</span><span id="total">0</span></td>
+               </tr>
+            </table>
+         </div>
+         <div class="checkout_bottom_wrap">
+            <input type="submit" form="basket" class="checkout_bottom" value="Checkout">
+         </div>
+   	</div>
+   </div>
+</div> <!-- /wrapper_cart -->
+
+<footer class="cart">
+	<nav class="footer_cart_menu">
+		<ul>
+			<li><a href="#">SITEMAP</a></li>
+			<li><a href="#">HELP</a></li>
+			<li><a href="#">DELIVERY</a></li>
+			<li><a href="#">PRIVACY POLICY</a></li>
+			<li><a href="#">ACCESSIBILLITY</a></li>
+		</ul>
+	</nav>
+
+	<div class="footer_section_top">
+		<div class="footer_contentl">
+			<h3>About</h3>
+			<p>
+			Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.
+			</p>
+		</div> <!-- /footer_contentl -->
+		<div class="footer_contentr">
+			<div class="footer_mail_form">
+         <h3>Stay in touch</h3>
+         <form action="" name="email_form" class="email_form">
+             <input type="email" id="email" name="E-mail" placeholder="Your E-mail">
+             <button class="subscribe_button" type="submit">Subscribe <img src="images/mail.svg" alt="subscribe"></button>
+         </form>
+         </div>
+		</div> <!-- /footer_contentr -->
+	</div> <!-- /footer_section_top -->
+
+	<div class="footer_section_bottom">
+		<div class="footer_contentl">
+			<div class="footer_link">
+				<a href="#">Ade books</a>
+				<p>Rare Books &#38; Textbooks</p>
+			</div>
+			<div class="footer_link">
+				<a href="#">DpReview</a>
+				<p>Digital Photography</p>
+			</div>
+			<div class="footer_link">
+				<a href="#">Audible</a>
+				<p>Download Audio Books</p>
+			</div>
+			<div class="footer_link">
+				<a href="#">Junglee</a>
+				<p>Shop Online in India</p>
+			</div>
+			<div class="footer_link">
+				<a href="#">Look</a>
+				<p>Kids' Clothing &#38; Shoes</p>
+			</div>
+			<div class="footer_link">
+				<a href="#">MYHABIT</a>
+				<p>Private Fashion Designer 
+				Sales</p>
+			</div>
+		</div> <!-- /footer_contentl -->
+		<div class="footer_contentr">
+			<div class="wrap_followus">
+           <h3>Follow us</h3>
+         	<a href="#">
+					<img src="images/facebook.png" alt="facebook">
+				</a>
+				<a href="#">
+					<img src="images/twitter.png" alt="twitter">
+				</a>
+				<a href="#">
+					<img src="images/pinterest.png" alt="pinterest">
+				</a>
+				<a href="#">
+					<img src="images/instagram.png" alt="instagram">
+				</a>
+			</div>
+		</div> <!-- /footer_contentr -->
+	</div> <!-- /footer_section_bottom -->
+	<div class="block_hidden">
+		<p class="footer_sign">	&#169; 2016 Bookworm. All rights reserved</p>
+		<hr>
+	</div>
+</footer>
+
+<section class="popup_demo">
+	<div id="popup1" class="overlay">
+		<div class="substrate">
+			<div class="popup">
+				<div class="wrap_popup">
+					<a href="#" class="close"><img src="images/popup-close.svg" alt="close"></a>
+					<h2>Login</h2>
+					<div class="content">
+						<form action="" name="popup_form" class="popup_form">
+							<div class="input_popup">
+									<input type="email" id="email" name="E-mail" placeholder="E-mail">
+							</div>
+							<div class="input_popup">
+									<input type="text" name="text" placeholder="Password">
+							</div>
+							<section class="remember_me">	
+								<input type="checkbox" class="checkbox" name="create_account" id="checkbox-remember">
+								<label for="checkbox-remember">Remember me</label>
+							</section>
+							<a href="#" class="forgot_password">Forgot password</a>
+							<div class="clearfix"></div>
+							<button class="popup_button" type="submit">Sign in</button>
+						</form>
+							
+						<a href="#" class="create_account_popup">Create an account <img src="images/rectangle55.svg" alt="Create an account"></a>
+						<hr class="popup_hr" width="100%" size="3px" color="#DADADB">
+						<h3>Sign in with social:</h3>
+						<a href="#" class="links_popup"><img src="images/Rectangle57.svg" alt="facebook"></a>
+						<a href="#" class="links_popup"><img src="images/Rectangle58.svg" alt="twitter"></a>
+						<a href="#" class="links_popup"><img src="images/Rectangle59.svg" alt="google"></a>
+					</div>
+				</div><!-- wrap-popup -->
+	  		</div> 
+		</div><!-- substr -->
+	</div>
+</section> <!-- popup_demo  -->
+
+<section class="popup_demo2">
+	<div id="popup2" class="overlay2">	
+		<div class="substrate2">
+			<a href="#" id="logo">
+				<img src="images/logo.svg" alt="logotype">
+			</a>
+			<a href="#" class="close2"><img src="images/popup-close.svg" alt="close"></a>
+			<nav class="navigation">
+				<ul class="menu">
+					<li><a href="#">Books</a></li>
+					<li><a href="#">Writers</a></li>
+					<li><a href="#">Publishers</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="header_menu">
+				<div class="box">
+				  <a href="#" class="container-2">
+				      <span class="icon"><img src="images/rectangle3.svg" alt="search"></span>
+				      <input type="search" id="search" placeholder="Search..." />
+				  </a>
+				</div>
+				<a href="#" class="shopping_cart">
+					<img src="images/rectangle2.svg" alt="shopping cart">
+				</a>
+				<a href="#popup1" class="userpic">
+					<img src="images/userpic.png" alt="user">
+				</a>
+			</div><!-- /header_menu -->
+		</div>
+	</div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/cart-calc.js"></script>
+</body>
+</html>
