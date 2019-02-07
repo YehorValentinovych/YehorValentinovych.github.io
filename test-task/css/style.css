@@ -15,14 +15,14 @@ body {
 }
 
 .wrap {
-	max-width: 1920px;
-	width: 100%;
+/*   max-width: 1920px; */
+  width: 100%;
   margin: 0 auto;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .clearfix {
