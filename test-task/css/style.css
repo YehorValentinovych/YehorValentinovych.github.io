@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #F4F4F4;
+  overflow: auto;
+}
+
+.wrap {
+	max-width: 1920px;
+	width: 100%;
+  margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header.main {
+  background-color: #505050;
+}
+
+header.main .menu {
+  display: inline-block;
+}
+
+header.main .menu {
+  text-decoration: none;
+  color: white;
+  padding: 24px 18px;
+  background-color: #202020;
+}
+
+header.main .logo {
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  display: inline-block;
+  margin: 21px 0 21px 24px;
+  color: #fff;
+}
+
+header.main .icon-ctrl {
+  margin: 0 32px 0 19px;
+}
+
+header.main .dashboard {
+  display: inline-block;
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+}
+
+header.main .box {
+  float: right;
+  position: relative;
+  min-width: 400px;
+  margin: 14px 15px;
+  color: white;
+}
+
+header.main .box input#search {
+  width: 100%;
+  background: #707070;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  outline: none;
+  line-height: 2;
+  border-radius: 3px;
+  padding-left: 42px;
+}
+
+header.main .box input#search::-webkit-input-placeholder {color:#fff;}
+header.main .box input#search::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+header.main .box input#search:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+header.main .box input#search:-ms-input-placeholder      {color:#fff;}
+
+.comppresed-menu {
+  position: fixed;
+  top: 69px;
+  left: 0;
+  display: inline-block;
+  min-width: 54px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms;
+  max-width: 54px;
+  min-height: 100%;
+  background-color: #202020;
+  text-align: center;
+  height: 100%;
+}
+
+.comppresed-menu .menu-link {
+  text-decoration: none;
+  display: block;
+  margin: 24px 0;
+}
+
+.comppresed-menu:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99999;
+  top: 69px;
+  height: 100%;
+  overflow: overlay;
+}
+
+.comppresed-menu:target ~ .menu {
+  visibility: hidden;
+}
+
+/*#menu:hover ~ .comppresed-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden-menu {
+  display: inline-block;
+  max-width: 54px;
+  min-height: 100%;
+  background-color: transparent;
+  height: 100%;
+}
+
+#menu:hover ~ .hidden-menu,
+#menu:hover ~ .hidden-menu {
+  display: none;
+}*/

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?b0cyg4');
+  src:  url('fonts/icomoon.eot?b0cyg4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?b0cyg4') format('truetype'),
+    url('fonts/icomoon.woff?b0cyg4') format('woff'),
+    url('fonts/icomoon.svg?b0cyg4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+  font-size: 18px;
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  color: #fff;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+  font-size: 18px;
+}
+
+.icon-play3:before {
+  content: "\ea1c";
+  font-size: 16px;
+  position: absolute;
+  top: 7px;
+  right: 16px;
+  color: #fff;
+  transform: rotate(-30deg);
+}
+
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
+
+.icon-ctrl:before {
+  content: "\ea50";
+  position: absolute;
+  top: 25px;
+  left: 246px;
+  transform: rotate(90deg);
+  font-size: 19px;
+  color: #fff;
+}
+
+.icon-terminal:before {
+  content: "\ea81";
+  font-size: 18px;
+  color: white;
+}
+
+.icon-embed:before {
+  content: "\ea7f";
+  font-size: 18px;
+  color: white;
+}
+
+.icon-embed2:before {
+  content: "\ea80";
+  font-size: 18px;
+  color: white;
+}
