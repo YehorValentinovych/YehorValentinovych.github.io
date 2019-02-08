@@ -3,41 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test task</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" href="css/style-icomoon.css" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 	<div class="wrap">
 		<header class="main">
-			<a href="#menu1" class="menu">
-				<span class="icon-menu"></span>
-			</a>
-			<div class="logo">Test Task - Menu</div>
-			<span class="icon-ctrl"></span>
-			<div class="dashboard">Dashboard</div>
-			<div class="box">
-				<a href="#" class="container">
-			    	<span class="icon-search"></span>
-			    	<input type="search" id="search" placeholder="Search.."/>
-			    	<span class="icon-play3"></span>
+				<a href="#menu1" class="menu">
+					<span class="icon-menu"></span>
 				</a>
-			</div>
-			<div class="clearfix"></div>
+				<div class="logo">Test Task - Menu<span class="fas fa-angle-right"></span></div>
+				<div class="dashboard">Dashboard</div>
+				<div class="box">
+					<a href="#" class="container">
+				    	<span class="icon-search"></span>
+				    	<input type="search" id="search" placeholder="Search.."/>
+				    	<span class="fas fa-caret-down"></span>
+					</a>
+				</div>
+				<div class="clearfix"></div>
 		</header>
-	</div>
 
-	<div id="menu1" class="comppresed-menu">
-		<a href="#" class="menu-link">
-			<span class="icon-terminal"></span>
-		</a>
-		<a href="#" class="menu-link">
-			<span class="icon-embed"></span>
-		</a>
-		<a href="#" class="menu-link">
-			<span class="icon-embed2"></span>
-		</a>
-		
+		<section id="menu1" class="expanded-menu">
+			<nav class="navigation">
+				<ul>
+					<li><a href="#" class="menu-link"><span class="fas fa-box"></span>Filters</a></li>
+					<li><a href="#" class="menu-link"><span class="fas fa-window-maximize"></span>Portfolios</a></li>
+					<li><a href="#" class="menu-link"><span class="fas fa-user-friends"></span>Explicit Rights</a></li>
+				</ul>
+			</nav>
+		</section>
 	</div>
-	
 </body>
+			
 </html>
