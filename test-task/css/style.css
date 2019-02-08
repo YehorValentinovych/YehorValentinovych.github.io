@@ -71,17 +71,28 @@ img {
 
 .icon-arrow-left2:before {
   content: "\ea40";
+  font-size: 18px;
+  position: absolute;
+  top: 24px;
+  left: 18px;
+  visibility: hidden;
+}
+
+.icon-arrow-left2:before .open {
+  visibility: visible;
 }
 
 header.main {
   background-color: #505050;
+  position: relative;
+  z-index: 99999;
 }
 
-header.main .menu {
+header.main .menu-bottom-wrap {
   float: left;
   text-decoration: none;
   color: white;
-  padding: 24px 18px;
+  padding: 10px 11px;
   background-color: #202020;
 }
 
@@ -144,7 +155,8 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 
 .expanded-menu {
   position: fixed;
-  top: 69px;
+  padding-top: 66px;
+  top: 0;
   left: 0;
   display: inline-block;
   min-width: 185px;
@@ -161,10 +173,9 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 .expanded-menu:target {
   visibility: visible;
   opacity: 1;
-  z-index: 99999;
-  top: 69px;
   height: 100%;
   overflow: overlay;
+  z-index: 9999;
 }
 
 .expanded-menu .navigation ul li {
@@ -196,6 +207,96 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   float: left;
   margin-left: 17px;
 }
+
+/* style for icon menu */
+/* line 11, ../sass/mob-menu.scss */
+.menu-icon span, .menu-icon:before, .menu-icon:after, .example-9 span:before, .example-9 span:after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0.125em;
+  background-color: #fff;
+  width: 0.75em;
+  height: 0.05em;
+  border-radius: 0;
+}
+
+/* line 22, ../sass/mob-menu.scss */
+.menu-icon {
+  font-size: 2rem;
+  width: 1em;
+  height: 1.3em;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+/* line 39, ../sass/mob-menu.scss */
+.menu-icon span {
+  margin-top: -0.025em;
+}
+/* line 44, ../sass/mob-menu.scss */
+.menu-icon:before {
+  content: "";
+  margin-top: -0.275em;
+}
+/* line 50, ../sass/mob-menu.scss */
+.menu-icon:after {
+  content: "";
+  margin-top: 0.225em;
+}
+
+/* line 59, ../sass/mob-menu.scss */
+.example-9:before, .example-9:after {
+  display: none;
+}
+/* line 63, ../sass/mob-menu.scss */
+.example-9 span {
+  transition: 0.25s ease;
+}
+/* line 66, ../sass/mob-menu.scss */
+.example-9 span:before, .example-9 span:after {
+  content: "";
+  top: 0;
+  right: 0;
+  left: auto;
+  transition: inherit;
+  margin: 0;
+}
+/* line 76, ../sass/mob-menu.scss */
+.example-9 span:before {
+  transform: translateY(-0.25em);
+}
+/* line 80, ../sass/mob-menu.scss */
+.example-9 span:after {
+  transform: translateY(0.25em);
+}
+/* line 86, ../sass/mob-menu.scss */
+.example-9.is-open span {
+  transform: rotate(-180deg);
+}
+/* line 89, ../sass/mob-menu.scss */
+.example-9.is-open span:before, .example-9.is-open span:after {
+  width: 0.375em;
+  right: 0.02em;
+}
+/* line 94, ../sass/mob-menu.scss */
+.example-9.is-open span:before {
+  transform: rotate(-45deg) translateY(0.17em);
+}
+/* line 98, ../sass/mob-menu.scss */
+.example-9.is-open span:after {
+  transform: rotate(45deg) translateY(-0.17em);
+}
+
 
 @media (max-width: 1100px) {
   header.main .box {
