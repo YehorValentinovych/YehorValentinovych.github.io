@@ -15,18 +15,62 @@ body {
 }
 
 .wrap {
-/*   max-width: 1920px; */
-  width: 100%;
+	width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .clearfix {
   clear: both;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?b0cyg4');
+  src:  url('../fonts/icomoon.eot?b0cyg4#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?b0cyg4') format('truetype'),
+    url('../fonts/icomoon.woff?b0cyg4') format('woff'),
+    url('../fonts/icomoon.svg?b0cyg4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+  font-size: 18px;
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  color: #fff;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+  font-size: 18px;
+}
+
+.icon-arrow-left2:before {
+  content: "\ea40";
 }
 
 header.main {
@@ -34,10 +78,7 @@ header.main {
 }
 
 header.main .menu {
-  display: inline-block;
-}
-
-header.main .menu {
+  float: left;
   text-decoration: none;
   color: white;
   padding: 24px 18px;
@@ -45,20 +86,22 @@ header.main .menu {
 }
 
 header.main .logo {
+  float: left;
   font-family: Roboto, sans-serif;
   font-size: 19px;
   font-weight: 700;
-  display: inline-block;
-  margin: 21px 0 21px 24px;
+  margin: 21px 32px 21px 24px;
   color: #fff;
 }
 
-header.main .icon-ctrl {
-  margin: 0 32px 0 19px;
+header.main .logo .fa-angle-right {
+  color: white;
+  margin-left: 19px;
 }
 
 header.main .dashboard {
-  display: inline-block;
+  float: left;
+  margin-top: 21px;
   font-family: Roboto, sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -68,9 +111,17 @@ header.main .dashboard {
 header.main .box {
   float: right;
   position: relative;
-  min-width: 400px;
-  margin: 14px 15px;
+  min-width: 570px;
+  margin: 17px 15px;
   color: white;
+}
+
+header.main .box .fa-caret-down {
+  font-size: 16px;
+  position: absolute;
+  top: 7px;
+  right: 16px;
+  color: #fff;
 }
 
 header.main .box input#search {
@@ -91,12 +142,12 @@ header.main .box input#search::-moz-placeholder          {color:#fff;}/* Firefox
 header.main .box input#search:-moz-placeholder           {color:#fff;}/* Firefox 18- */
 header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 
-.comppresed-menu {
+.expanded-menu {
   position: fixed;
   top: 69px;
   left: 0;
   display: inline-block;
-  min-width: 54px;
+  min-width: 185px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 500ms;
@@ -107,13 +158,7 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   height: 100%;
 }
 
-.comppresed-menu .menu-link {
-  text-decoration: none;
-  display: block;
-  margin: 24px 0;
-}
-
-.comppresed-menu:target {
+.expanded-menu:target {
   visibility: visible;
   opacity: 1;
   z-index: 99999;
@@ -122,24 +167,44 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   overflow: overlay;
 }
 
-.comppresed-menu:target ~ .menu {
-  visibility: hidden;
+.expanded-menu .navigation ul li {
+  list-style-type: none;
 }
 
-/*#menu:hover ~ .comppresed-menu {
-  visibility: visible;
-  opacity: 1;
+.expanded-menu .navigation ul li:hover,
+.expanded-menu .navigation ul li:active {
+  background-color: #3A3A3A;
 }
 
-.hidden-menu {
-  display: inline-block;
+.expanded-menu .navigation ul li .menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  padding: 24px 0;
+  margin-left: 54px;
+} 
+
+.expanded-menu .navigation ul li .menu-link span {
+  position: absolute;
+  left: 0;
   max-width: 54px;
-  min-height: 100%;
-  background-color: transparent;
-  height: 100%;
+  float: left;
+  margin-left: 17px;
 }
 
-#menu:hover ~ .hidden-menu,
-#menu:hover ~ .hidden-menu {
-  display: none;
-}*/
+@media (max-width: 1100px) {
+  header.main .box {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 800px) {
+  header.main .box {
+    min-width: 180px;
+  }
+}
