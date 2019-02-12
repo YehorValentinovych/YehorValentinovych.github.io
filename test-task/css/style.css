@@ -178,6 +178,10 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   z-index: 9999;
 }
 
+.expanded-menu .mobile-header-content {
+  display: none;
+}
+
 .expanded-menu .navigation ul li {
   list-style-type: none;
 }
