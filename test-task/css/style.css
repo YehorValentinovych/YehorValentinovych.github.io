@@ -298,12 +298,12 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 }
 
 @media (max-width: 1000px) and (min-width: 100px) {
- header.main {
-    min-height: 88px;
+  header.main {
+    min-height: 149px;
   }
 
   header.main .menu-icon {
-    font-size: 3.1rem;
+    font-size: 6rem;
   }
 
   header.main .logo {
@@ -316,27 +316,31 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 
   header.main .box {
     min-width: 180px;
-    margin: 19px 15px;
+    margin: 38px 28px;
   }
 
   header.main .box input#search {
-    min-height: 50px;
+    font-size: 28px;
+    min-height: 69px;
     border-radius: 25px;
+    padding-left: 55px;
   }
 
   header.main .box .icon-search:before {
-    top: 14px;
+    top: 21px;
     left: 14px;
+    font-size: 28px;
   }
 
   header.main .box .fa-caret-down {
-    top: 15px;
+    top: 21px;
     right: 16px;
+    font-size: 28px;
   }
 
   .expanded-menu {
     min-width: 50%;
-    margin-top: 23px;
+    margin-top: 84px;
   }
 
   .expanded-menu .mobile-header-content {
@@ -347,7 +351,7 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   .expanded-menu .mobile-header-content .logo {
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
     padding: 21px 0;
     color: #fff;
@@ -361,18 +365,20 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   .expanded-menu .mobile-header-content .dashboard {
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 400;
     color: #fff;
     padding: 21px 0;
   }
 
   .expanded-menu .navigation ul li .menu-link {
-    font-size: 25px;
-    margin-left: 71px;
+    font-size: 28px;
+    padding-left: 115px;
+    margin: 0;
   }
 
   .expanded-menu .navigation ul li .menu-link span {
-    margin-left: 23px;
+    margin-left: 39px;
+    font-size: 43px;
   }
 }
