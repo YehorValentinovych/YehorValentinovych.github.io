@@ -298,7 +298,7 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 }
 
 @media (max-width: 1000px) and (min-width: 100px) {
-  header.main {
+ header.main {
     min-height: 88px;
   }
 
@@ -308,8 +308,6 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 
   header.main .logo {
     display: none;
-    margin-top: 24px;
-    padding: 21px 0;
   }
 
   header.main .dashboard {
@@ -337,7 +335,8 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   }
 
   .expanded-menu {
-    max-width: 200px;
+    min-width: 50%;
+    margin-top: 23px;
   }
 
   .expanded-menu .mobile-header-content {
@@ -348,7 +347,7 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   .expanded-menu .mobile-header-content .logo {
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 700;
     padding: 21px 0;
     color: #fff;
@@ -362,9 +361,18 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
   .expanded-menu .mobile-header-content .dashboard {
     text-align: center;
     font-family: Roboto, sans-serif;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 400;
     color: #fff;
     padding: 21px 0;
+  }
+
+  .expanded-menu .navigation ul li .menu-link {
+    font-size: 25px;
+    margin-left: 71px;
+  }
+
+  .expanded-menu .navigation ul li .menu-link span {
+    margin-left: 23px;
   }
 }
