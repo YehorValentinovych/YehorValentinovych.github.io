@@ -298,8 +298,18 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 }
 
 @media (max-width: 1000px) and (min-width: 100px) {
+  header.main {
+    min-height: 88px;
+  }
+
+  header.main .menu-icon {
+    font-size: 3.1rem;
+  }
+
   header.main .logo {
     display: none;
+    margin-top: 24px;
+    padding: 21px 0;
   }
 
   header.main .dashboard {
@@ -308,6 +318,22 @@ header.main .box input#search:-ms-input-placeholder      {color:#fff;}
 
   header.main .box {
     min-width: 180px;
+    margin: 19px 15px;
+  }
+
+  header.main .box input#search {
+    min-height: 50px;
+    border-radius: 25px;
+  }
+
+  header.main .box .icon-search:before {
+    top: 14px;
+    left: 14px;
+  }
+
+  header.main .box .fa-caret-down {
+    top: 15px;
+    right: 16px;
   }
 
   .expanded-menu {
