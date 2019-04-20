@@ -1,0 +1,172 @@
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../sass/blocks/our-story-block.scss */
+.our-story {
+  padding-top: 70px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 68px;
+  max-width: 942px;
+}
+/* line 9, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-img {
+  display: inline-block;
+  text-align: right;
+  margin-right: 100px;
+  padding-bottom: 103px;
+  clear: right;
+}
+/* line 15, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-img img {
+  width: auto;
+  min-width: 228px;
+}
+/* line 20, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-content {
+  width: 57%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 24, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-content h2 {
+  font-size: 22px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  color: #413d4b;
+  margin-bottom: 28px;
+}
+/* line 32, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-content p {
+  float: left;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.42px;
+  line-height: 22px;
+  color: #413d4b;
+  margin-bottom: 35px;
+}
+/* line 42, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-content .our-story-buttom {
+  text-decoration: none;
+  width: 123px;
+  float: left;
+  margin-bottom: 70px;
+  padding: 15px;
+  border: 1px solid #00e0d0;
+  color: #00e0d0;
+  font-size: 16px;
+  font-family: "Hammersmith One";
+}
+/* line 52, ../../sass/blocks/our-story-block.scss */
+.our-story .our-story-content .our-story-buttom:active, .our-story .our-story-content .our-story-buttom:hover {
+  color: #46A3CC;
+  border: 1px solid #46A3CC;
+}
+
+@media (max-width: 1080px) and (min-width: 100px) {
+  /* line 60, ../../sass/blocks/our-story-block.scss */
+  .our-story {
+    padding-left: 0;
+  }
+  /* line 62, ../../sass/blocks/our-story-block.scss */
+  .our-story .our-story-img {
+    display: none;
+  }
+  /* line 65, ../../sass/blocks/our-story-block.scss */
+  .our-story .our-story-content {
+    width: 100%;
+  }
+  /* line 67, ../../sass/blocks/our-story-block.scss */
+  .our-story .our-story-content h2 {
+    font-size: 42px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    margin-bottom: 68px;
+    text-align: center;
+  }
+  /* line 74, ../../sass/blocks/our-story-block.scss */
+  .our-story .our-story-content p {
+    font-size: 24px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 0 50px;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+  /* line 83, ../../sass/blocks/our-story-block.scss */
+  .our-story .our-story-content .our-story-buttom {
+    float: none;
+    display: grid;
+    width: 208px;
+    margin: 33px auto 43px auto;
+    padding: 15px;
+    font-size: 26px;
+    text-align: center;
+  }
+}
