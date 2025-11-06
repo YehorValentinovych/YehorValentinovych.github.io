@@ -1,0 +1,125 @@
+/* --- BASIC RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Orbitron", sans-serif;
+  }
+  
+  /* --- THEMES --- */
+  :root {
+    --bg-dark: #050505;
+    --bg-light: #f4f4f4;
+    --neon: #8b5cf6;
+    --text-dark: #ffffff;
+    --text-light: #0a0a0a;
+  }
+  
+  body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  body.light {
+    background: var(--bg-light);
+    color: var(--text-light);
+  }
+  
+  /* --- MATRIX BACKGROUND --- */
+  #matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: transparent;
+  }
+  
+  /* --- CONTENT --- */
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--neon);
+    text-shadow: 0 0 20px var(--neon);
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    animation: pulse 3s infinite ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+  }
+  
+  /* --- RUNNING LINE --- */
+  .ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+  }
+  
+  body.light .ticker span {
+    color: var(--text-light);
+  }
+  
+  /* --- BUTTON --- */
+  #theme-toggle {
+    background: none;
+    border: 2px solid var(--neon);
+    color: var(--neon);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  
+  #theme-toggle:hover {
+    background: var(--neon);
+    color: #fff;
+    box-shadow: 0 0 20px var(--neon);
+  }
+  
+  /* --- ANIMATIONS --- */
+  @keyframes pulse {
+    0%, 100% { text-shadow: 0 0 20px var(--neon); }
+    50% { text-shadow: 0 0 40px var(--neon); }
+  }
+  
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* --- RESPONSIVE --- */
+  @media (max-width: 768px) {
+    .title { font-size: 2.5rem; }
+    .subtitle { font-size: 1rem; }
+  }
+  
