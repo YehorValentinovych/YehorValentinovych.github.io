@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="css/blocks/blocks-catalog.css" type="text/css">
+</head>
+<body>
+	<header class="top">
+		<a href="#" id="logo">
+			<img src="images/logo.svg" alt="logotype">
+		</a>
+		<nav class="navigation">
+			<ul class="menu">
+				<li><a href="#">Books</a></li>
+				<li><a href="#">Writers</a></li>
+				<li><a href="#">Publishers</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header_menu">
+			<div class="box">
+			  <a href="#" class="container-2">
+			      <span class="icon"><img src="images/rectangle3.svg" alt="search"></span>
+			      <input type="search" id="search" placeholder="Search..." />
+			  </a>
+			</div>
+			<a href="#" class="shopping_cart">
+				<img src="images/rectangle2.svg" alt="shopping cart">
+			</a>
+			<a href="#popup1" class="userpic">
+				<img src="images/userpic.png" alt="user">
+			</a>
+			</div><!-- /header_menu -->
+			<a href="#popup2" class="mob-menu example5"><span></span></a>
+	</header> <!--/header.top-->
+
+	<div class="clearfix"></div>
+	<div class="wrap">
+		<h2>Our bookshelf</h2>
+		<section class="sitebar">
+			<nav class="category">
+				<ul class="menu">
+					<a href="page/page5.html"><li>All</li></a>
+					<a href="#"><li>Art &#38; Photography</li></a>
+					<a href="#"><li>Audio books</li></a>
+					<a href="#"><li>Biography</li></a>
+					<a href="#"><li>Business</li></a>
+					<a href="#"><li>Childrens Book</li></a>
+					<a href="#"><li>Computing</li></a>
+					<a href="#"><li>Crafts &#38; Hobbies</li></a>
+					<a href="#"><li>Crime &#38; Thriller</li></a>
+					<a href="#"><li>Dictionaries &#38; Languages</li></a>
+					<a href="#"><li>Entertainment</li></a>
+					<a href="#"><li>Food &#38; Drink</li></a>
+					<a href="#"><li>Health</li></a>
+					<a href="#"><li>Home &#38; Garden</li></a>
+					<a href="#"><li>Humor</li></a>
+					<a href="#"><li>Medical</li></a>
+					<a href="#"><li>Reference</li></a>
+					<a href="#"><li>Romance</li></a>
+					<a href="#"><li>Science &#38; Geography</li></a>
+					<a href="#"><li>Fantasy</li></a>
+					<a href="#"><li>Social</li></a>
+					<a href="#"><li>Sport</li></a>
+					<a href="#"><li>Transport</li></a>
+					<a href="#"><li>Travel &#38; Holiday</li></a>
+				</ul>
+			</nav>
+
+			<hr>
+
+			<div class="pop-writers">
+				<h3>Popular writers</h3>
+				<div class="writers">
+					<img src="images/face1.png" alt="writers">
+					<a href="#">Ransom Riggs</a>
+					<p>Biography, children books</p>
+				</div>
+				<div class="writers">
+					<img src="images/face2.png" alt="writers">
+					<a href="#">Brett Halliday</a>
+					<p>Social, sport</p>
+				</div>
+				<div class="writers">
+					<img src="images/face3.png" alt="writers">
+					<a href="#">George Orwell</a>
+					<p>Medical. humor</p>
+				</div>
+				<div class="writers">
+					<img src="images/face4.png" alt="writers">
+					<a href="#">Patricia Craigh</a>
+					<p>Medical. humor</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<section class="sorting">
+				<div class="container-1">
+			      <span class="icon"><img src="images/search.png" alt="search"></span>
+			      <input type="search" id="search" placeholder="Search by keyword" name="q"/>
+			      <span class="validity"></span>
+	  			</div>
+
+	  			<div class="select_mate" data-mate-select="active" >
+					<select name="" onchange="" onclick="return false;" id="languages">
+						<option value="">Paperback</option>
+						<option value="1">Hard cover</option>
+						<option value="2">Ebook</option>	
+					</select>
+					<p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+					<span onclick="open_select(this)" class="icon_select_mate" >
+						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+							<path d="M0-.75h24v24H0z" fill="none"/>
+						</svg>
+					</span>
+					<div class="cont_list_select_mate">
+						<ul class="cont_select_int">  </ul> 
+					</div>
+				</div>
+
+				<div class="select_mate" data-mate-select="active" >
+					<select name="" onchange="" onclick="return false;" id="languages">
+						<option value="">All languages </option>
+						<option value="1">English</option>
+						<option value="2">Russian</option>
+						<option value="3">Ukrainian</option>
+					</select>
+					<p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+					<span onclick="open_select(this)" class="icon_select_mate" >
+						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+							<path d="M0-.75h24v24H0z" fill="none"/>
+						</svg>
+					</span>
+					<div class="cont_list_select_mate">
+						<ul class="cont_select_int">  </ul> 
+					</div>
+				</div>
+				 <!-- Custom select structure --> 
+				<div class="select_mate" data-mate-select="active" >
+					<select name="" onchange="" onclick="return false;" id="popular">
+						<option value="">Pre order</option>
+						<option value="1">Partial order</option>
+						<option value="2">Total preorder</option>
+						<option value="3">Total order</option>
+					</select>
+					<p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+					<span onclick="open_select(this)" class="icon_select_mate" >
+						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+							<path d="M0-.75h24v24H0z" fill="none"/>
+						</svg>
+					</span>
+					<div class="cont_list_select_mate">
+						<ul class="cont_select_int">  </ul> 
+					</div>
+				</div>
+
+				<div class="select_mate" data-mate-select="active" >
+					<select name="" onchange="" onclick="return false;" id="popular">
+						<option value="">Popular</option>
+						<option value="1">New</option>
+						<option value="2">Viewed</option>
+						<option value="3">Favorites</option>
+					</select>
+					<p class="selecionado_opcion"  onclick="open_select(this)" ></p>
+					<span onclick="open_select(this)" class="icon_select_mate" >
+						<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+							<path d="M0-.75h24v24H0z" fill="none"/>
+						</svg>
+					</span>
+					<div class="cont_list_select_mate">
+						<ul class="cont_select_int">  </ul> 
+					</div>
+				</div>
+
+				<div class="showing_result">
+					<p>
+						Showing 
+						1 to 30
+						of 100 results
+					</p>
+				</div>		
+			</section>	<!-- sorting -->
+			
+			<div class="shopfront_books">
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book1.png" alt="Opaque Region" data-price="12">
+					   <figcaption>
+					    	<a href="#">$12</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">Opaque Region</a>
+					<a href="#" class="author_name">Carlos Fuentes</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book2.png" alt="The Meandering Corpse" data-price="13">
+					   <figcaption>
+					    	<a href="#">$13</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">The Meandering Corpse</a>
+					<a href="#" class="author_name">Richard S. Prather</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book3.png" alt="English Detective Stories" data-price="22">
+					   <figcaption>
+					    	<a href="#">$22</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">English Detective Stories</a>
+					<a href="#" class="author_name">Patricia Craig</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book4.png" alt="Die Like a Dog" data-price="113">
+					   <figcaption>
+					    	<a href="#">$113</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">Die Like a Dog</a>
+					<a href="#" class="author_name">Brett Halliday</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book5.png" alt="1984" data-price="12">
+					   <figcaption>
+					    	<a href="#">$12</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">1984</a>
+					<a href="#" class="author_name">George Orwell</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book6.png" alt="The Lord of the Rings" data-price="12">
+					   <figcaption>
+					    	<a href="#">$12</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">The Lord of the Rings</a>
+					<a href="#" class="author_name">J.R.R. Tolkien</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book7.png" alt="Opaque Region" data-price="18">
+					   <figcaption>
+					    	<a href="#">$18</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">Opaque Region</a>
+					<a href="#" class="author_name">Carlos Fuentes</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book8.png" alt="The Meandering Corpse" data-price="125">
+					   <figcaption>
+					    	<a href="#">$125</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">The Meandering Corpse</a>
+					<a href="#" class="author_name">Richard S. Prather</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book9.png" alt="English Detective Stories" data-price="666">
+					   <figcaption>
+					    	<a href="#">$666</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">English Detective Stories</a>
+					<a href="#" class="author_name">Patricia Craig</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book10.png" alt="Die Like a Dog" data-price="12">
+					   <figcaption>
+					    	<a href="#">$12</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">Die Like a Dog</a>
+					<a href="#" class="author_name">Brett Halliday</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book11.png" alt="1984" data-price="13">
+					   <figcaption>
+					    	<a href="#">$13</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+					<a href="#" class="books_name">1984</a>
+					<a href="#" class="author_name">George Orwell</a>
+				</div>
+				<div class="books">
+					<figure>
+					   <img src="images/shopfront/book12.png" alt="The Lord of the Rings" data-price="11">
+					   <figcaption>
+					    	<a href="#">$11</a>
+					    	<a href="#" class="look"><img src="images/rectangle22.png" alt="#"></a>
+					    	<a href="#" class="save"><img src="images/rectangle23.png" alt="#"></a>
+					    	<a href="#" class="buy"><img src="images/rectangle24.png" alt="#"></a>
+					   </figcaption>
+					</figure>
+						<a href="#" class="books_name">The Lord of the Rings</a>
+						<a href="#" class="author_name">J.R.R. Tolkien</a>
+				</div>
+			</div>
+			<hr>
+			<div class="catalog_pages">
+				<div class="bottom_loadMore">
+					<a href="#">
+						Load more <img src="images/load.png" alt="load">
+					</a>
+				</div>
+
+				<div class="pagination__wrapper">
+					<ul class="pagination">
+				   	<li>
+				   		<a href="#" class="prev" title="previous page"><img src="images/prev.svg" alt="">Prev</a>
+				   	</li>
+				   	<li>
+				   		<a href="#" class="active" title="first page - page 1">1</a>
+				   	</li>
+					   <li>
+					      <span>...</span>
+					   </li>
+				   	<li>
+				      	<a href="page/page4.html" title="page 4">4</a>
+				   	</li>
+					   <li>
+					   	<a href="page/page5.html"  title="page 5">5</a>
+					   </li>
+				   	<li>
+				   		<a href="page/page6.html" title="page 6">6</a>
+				   	</li>
+				   	<li>
+				      	<span>...</span>
+				   	</li>
+				   	<li>
+				      	<a href="page/page13.html" title="last page - page 13">13</a>
+				   	</li>
+				   	<li>
+				   		<a href="page/page2.html" class="next" title="next page">Next<img src="images/next.svg" alt="page2"></a>
+				   	</li>
+					</ul>
+				</div>
+			</div> <!-- catalog_pages -->
+		</section>	<!-- content -->
+	</div> <!-- wrap -->
+
+	<footer class="hom">
+		<nav class="footer_hom_menu">
+			<ul>
+				<li><a href="#">SITEMAP</a></li>
+				<li><a href="#">HELP</a></li>
+				<li><a href="#">DELIVERY</a></li>
+				<li><a href="#">PRIVACY POLICY</a></li>
+				<li><a href="#">ACCESSIBILLITY</a></li>
+			</ul>
+		</nav>
+
+		<div class="footer_section_top">
+			<div class="footer_contentl">
+				<h3>About</h3>
+				<p>
+				Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.
+				</p>
+			</div> <!-- /footer_contentl -->
+			<div class="footer_contentr">
+				<div class="footer_mail_form">
+            <h3>Stay in touch</h3>
+	            <form action="" name="email_form" class="email_form">
+	               <input type="email" id="email" name="E-mail" placeholder="Your E-mail">
+	               <button class="subscribe_button" type="submit">Subscribe <img src="images/mail.svg" alt="subscribe"></button>
+	            </form>
+            </div>
+			</div> <!-- /footer_contentr -->
+		</div> <!-- /footer_section_top -->
+
+		<div class="footer_section_bottom">
+			<div class="footer_contentl">
+				<div class="footer_link">
+					<a href="#">Ade books</a>
+					<p>Rare Books &#38; Textbooks</p>
+				</div>
+				<div class="footer_link">
+					<a href="#">DpReview</a>
+					<p>Digital Photography</p>
+				</div>
+				<div class="footer_link">
+					<a href="#">Audible</a>
+					<p>Download Audio Books</p>
+				</div>
+				<div class="footer_link">
+					<a href="#">Junglee</a>
+					<p>Shop Online in India</p>
+				</div>
+				<div class="footer_link">
+					<a href="#">Look</a>
+					<p>Kids' Clothing &#38; Shoes</p>
+				</div>
+				<div class="footer_link">
+					<a href="#">MYHABIT</a>
+					<p>Private Fashion Designer 
+					Sales</p>
+				</div>
+			</div> <!-- /footer_contentl -->
+			<div class="footer_contentr">
+				<div class="wrap_followus">
+              <h3>Follow us</h3>
+            	<a href="#">
+						<img src="images/facebook.png" alt="facebook">
+					</a>
+					<a href="#">
+						<img src="images/twitter.png" alt="twitter">
+					</a>
+					<a href="#">
+						<img src="images/pinterest.png" alt="pinterest">
+					</a>
+					<a href="#">
+						<img src="images/instagram.png" alt="instagram">
+					</a>
+				</div>
+			</div> <!-- /footer_contentr -->
+		</div> <!-- /footer_section_bottom -->
+		<div class="block_hidden">
+			<p class="footer_sign">	&#169; 2016 Bookworm. All rights reserved</p>
+			<hr>
+		</div>
+	</footer>
+
+<section class="popup_demo">
+	<div id="popup1" class="overlay">
+		<div class="substrate">
+			<div class="popup">
+				<div class="wrap_popup">
+					<a href="#" class="close"><img src="images/popup-close.svg" alt="close"></a>
+					<h2>Login</h2>
+					<div class="content">
+						<form action="" name="popup_form" class="popup_form">
+							<div class="input_popup">
+								<input type="email" id="email" name="E-mail" placeholder="E-mail">
+							</div>
+							<div class="input_popup">
+								<input type="text" name="text" placeholder="Password">
+							</div>
+							<section class="remember_me">	
+								<input type="checkbox" class="checkbox" name="create_account" id="checkbox-remember">
+								<label for="checkbox-remember">Remember me</label>
+							</section>
+							<a href="#" class="forgot_password">Forgot password</a>
+							<div class="clearfix"></div>
+							<button class="popup_button" type="submit">Sign in</button>
+						</form>
+						
+						<a href="#" class="create_account_popup">Create an account <img src="images/rectangle55.svg" alt="Create an account"></a>
+						<hr class="popup_hr" width="100%" size="3px" color="#DADADB">
+						<h3>Sign in with social:</h3>
+						<a href="#" class="links_popup"><img src="images/Rectangle57.svg" alt="facebook"></a>
+						<a href="#" class="links_popup"><img src="images/Rectangle58.svg" alt="twitter"></a>
+						<a href="#" class="links_popup"><img src="images/Rectangle59.svg" alt="google"></a>
+					</div>
+				</div><!-- wrap-popup -->
+	  		</div> 
+		</div><!-- substr -->
+	</div>
+</section> <!-- popup_demo  -->
+
+<section class="popup_demo2">
+	<div id="popup2" class="overlay2">	
+		<div class="substrate2">
+			<a href="#" id="logo">
+				<img src="images/logo.svg" alt="logotype">
+			</a>
+			<a href="#" class="close2"><img src="images/popup-close.svg" alt="close"></a>
+			<nav class="navigation">
+				<ul class="menu">
+					<li><a href="#">Books</a></li>
+					<li><a href="#">Writers</a></li>
+					<li><a href="#">Publishers</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="header_menu">
+				<div class="box">
+				  <a href="#" class="container-2">
+				      <span class="icon"><img src="images/rectangle3.svg" alt="search"></span>
+				      <input type="search" id="search" placeholder="Search..." />
+				  </a>
+				</div>
+				<a href="#" class="shopping_cart">
+					<img src="images/rectangle2.svg" alt="shopping cart">
+				</a>
+				<a href="#popup1" class="userpic">
+					<img src="images/userpic.png" alt="user">
+				</a>
+			</div><!-- /header_menu -->
+		</div>
+	</div>
+</section>
+
+	<script src="js/select.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* line 5, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story {
+  position: relative;
+}
+/* line 5, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd {
+  width: 100%;
+  min-height: 355px;
+  background-image: url(../img/video-bgd.png);
+  background-repeat: no-repeat;
+}
+/* line 10, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay {
+  width: 100%;
+  min-height: 355px;
+  background: -webkit-linear-gradient(left, rgba(9, 5, 47, 0.85), rgba(44, 26, 88, 0.85));
+  background: -o-linear-gradient(left, rgba(9, 5, 47, 0.85), rgba(44, 26, 88, 0.85));
+  background: linear-gradient(to right, rgba(9, 5, 47, 0.85), rgba(44, 26, 88, 0.85));
+}
+/* line 16, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay .watch-video-button {
+  position: relative;
+  top: 140px;
+  width: 100px;
+  margin: 0 auto;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+/* line 23, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay .watch-video-button:hover {
+  background-color: #46A3CC;
+}
+/* line 26, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay .watch-video-button a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+/* line 30, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay .watch-video-button a img {
+  padding: 27px 28px 28px 35px;
+}
+/* line 35, ../../sass/blocks/watch-video-story-block.scss */
+.watch-video-story .watch-video-bgd .watch-video-overlay p {
+  position: relative;
+  top: 140px;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 34px;
+}
+
+@media (max-width: 1080px) and (min-width: 100px) {
+  /* line 55, ../../sass/blocks/watch-video-story-block.scss */
+  .watch-video-story .watch-video-bgd .watch-video-overlay .watch-video-button {
+    top: 110px;
+  }
+  /* line 58, ../../sass/blocks/watch-video-story-block.scss */
+  .watch-video-story .watch-video-bgd .watch-video-overlay p {
+    top: 110px;
+    font-size: 26px;
+  }
+}

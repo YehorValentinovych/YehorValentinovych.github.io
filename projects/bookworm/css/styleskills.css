@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Ramaraja, Yrsa, serif;
+	background-color: #f2fdff;
+	font-size: 16px;
+	overflow: auto;
+	width: 100%;
+	height: auto;
+	padding-left: 15px;
+}
+
+.skills {
+	font-size: 21px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	
+}
+
+h2 {
+	padding: 20px 0;
+	font-size: 31px;
+	color: #555963;
+}
+
+p {
+	font-size: 21px;
+}
+
+h3 {
+	font-size: 25px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	padding: 16px 0;
+}
+
+.skills ul li {
+	font-size: 16px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	margin-top: 10px; 
+	margin-bottom: 13px;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.qualities {
+	font-size: 21px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	padding-left: 15px;
+}
+
+.qualities p {
+	font-size: 21px;
+}
+
+.qualities h3 {
+	font-size: 25px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	padding: 16px 0;
+}
+
+.qualities ul li {
+	font-size: 16px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	margin-top: 10px; 
+	margin-bottom: 13px;
+	list-style-type: square;
+	margin-left: 20px;
+}
+.qualities a {
+	color: blue;
+	padding: 40px 0;
+}
+.qualities a:hover {
+	color: green;
+}
+
+.contacts {
+	width: 110%;
+	margin-top: 15px;
+	background-color: #e2e6e9;
+	font-size: 21px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+	position: relative;
+	left: -15px;
+	padding-left: 25px;
+}
+
+.contacts p {
+	font-size: 21px;
+}
+
+.contacts h3 {
+	font-size: 25px;
+	font-family: Ramaraja, serif;
+	color: #555963;
+}
