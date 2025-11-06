@@ -1,0 +1,94 @@
+/* style-03v.css - Divine Studio (Dark + Light themes) */
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;width:100%;}
+body{
+  font-family: Inter, "Orbitron", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  overflow:hidden;
+  background: linear-gradient(180deg,#030307 0%, #0a0620 100%);
+  color: #efeaff;
+}
+
+/* Theme variants */
+body.light{
+  background: linear-gradient(180deg,#f4f3fb 0%, #efeaf8 100%);
+  color:#120418;
+}
+
+/* Canvas layers */
+#bg-canvas, #matrix-canvas, #particles-canvas{
+  position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;pointer-events:none;
+}
+
+/* Topbar (translucent) */
+.topbar{
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:12;width:calc(100% - 48px);max-width:1200px;
+}
+.topbar-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:10px 14px;border-radius:14px;
+  backdrop-filter: blur(8px) saturate(1.05);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.45);
+}
+
+/* Brand */
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:0.08em}
+.logo-dot{width:12px;height:12px;border-radius:50%;
+  background: linear-gradient(135deg,#8b5cf6,#b794f4);box-shadow:0 0 12px rgba(139,92,246,0.9)}
+.brand-text strong{color:#8b5cf6;text-shadow:0 0 8px rgba(139,92,246,0.25)}
+
+/* Nav links */
+.top-links{display:flex;gap:12px;align-items:center}
+.nav-link{color:rgba(234,230,255,0.85);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:all .22s}
+.nav-link:hover{transform:translateY(-3px);color:#fff}
+
+/* Theme switch (pill) */
+.switch{position:relative;width:54px;height:28px;display:inline-block}
+.switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;inset:0;border-radius:999px;border:1px solid rgba(255,255,255,0.06);background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(4px)}
+.slider::before{content:"";position:absolute;left:4px;top:3px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #fff,#e9e9e9 40%);transition:.25s;box-shadow:0 6px 18px rgba(123,0,255,0.12)}
+.switch input:checked + .slider{background:linear-gradient(90deg, rgba(139,92,246,0.14), rgba(183,148,244,0.08))}
+.switch input:checked + .slider::before{transform:translateX(26px);background:linear-gradient(90deg,#8b5cf6,#b794f4);box-shadow:0 6px 28px rgba(139,92,246,0.22)}
+
+/* Stage / main content */
+.stage{position:relative;z-index:3;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:4rem 1rem}
+.center-wrap{text-align:center;padding:clamp(28px,6vw,80px);pointer-events:auto;max-width:1200px;margin:0 auto}
+
+/* Rings svg */
+.rings{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(78vw,760px);height:auto;pointer-events:none;filter:blur(6px) contrast(1.05) saturate(1.06);opacity:0.95;z-index:2}
+
+/* Hero title */
+.hero-title{
+  font-size:clamp(36px,6vw,84px);line-height:1;margin:6px 0 8px;letter-spacing:0.18em;
+  color: #b794f4;text-shadow:0 6px 30px rgba(139,92,246,0.14),0 0 40px rgba(139,92,246,0.12);
+  font-weight:800;will-change:transform;animation:float 6s ease-in-out infinite;
+  z-index:4;position:relative;
+}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+
+/* subtitle */
+.hero-sub{color:rgba(234,230,255,0.85);font-size:clamp(14px,2vw,18px);margin-bottom:22px;z-index:4}
+
+/* ticker wrapper */
+.ticker-wrap{margin-top:28px;display:flex;justify-content:center;align-items:center;z-index:4}
+.ticker{width:min(1100px,92vw);overflow:hidden;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:18px 14px;backdrop-filter: blur(8px)}
+.ticker-item{display:inline-block;white-space:nowrap;padding-right:60px;font-weight:800;font-size:clamp(18px,3.6vw,36px);color:rgba(255,255,255,0.95);letter-spacing:0.12em;will-change:transform}
+
+/* footer */
+.page-footer{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:6;font-size:13px;color:rgba(234,230,255,0.7);opacity:0.95}
+
+/* responsive */
+@media(max-width:880px){
+  .topbar-inner{padding:8px 10px}
+  .nav-link{display:none}
+  .hero-title{font-size:34px}
+  .ticker{padding:12px}
+}
+
+/* Light-theme tweaks for visibility */
+body.light .brand-text strong{color:#6d28d9}
+body.light .nav-link{color:rgba(10,8,20,0.6)}
+body.light .ticker{background:linear-gradient(90deg, rgba(10,8,20,0.03), rgba(10,8,20,0.01));border:1px solid rgba(10,8,20,0.04)}
