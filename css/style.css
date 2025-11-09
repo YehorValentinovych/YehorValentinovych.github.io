@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300;500&display=swap');
+
+:root {
+  --bg-dark: #05020f;
+  --text-light: #f2e9ff;
+  --accent: #9b6ef3;
+  --glow: rgba(155, 110, 243, 0.5);
+
+  /* Light theme vars */
+  --bg-light: #f8f8ff;
+  --text-dark: #1a1033;
+  --accent-light: #7c3aed;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow: hidden;
+  height: 100vh;
+  transition: background 0.6s, color 0.6s;
+}
+
+body.light {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Header */
+.topbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.top-links {
+  display: flex;
+  gap: 1.2rem;
+}
+.nav-link {
+  color: var(--text-light);
+  text-decoration: none;
+  transition: 0.3s;
+}
+body.light .nav-link {
+  color: var(--text-dark);
+}
+.nav-link:hover {
+  color: var(--accent);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 22px;
+}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #444;
+  transition: .4s;
+  border-radius: 22px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px; width: 18px;
+  left: 3px; bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: var(--accent);
+}
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+/* Center section */
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  color: var(--text-light);
+  text-shadow: 0 0 20px var(--glow), 0 0 40px var(--accent);
+  transition: color 0.6s, text-shadow 0.6s;
+}
+
+body.light .hero-title {
+  color: var(--text-dark);
+  text-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.hero-sub {
+  font-size: 2.2rem;
+  opacity: 0.85;
+  margin-top: 10px;
+  transition: color 0.6s;
+}
+
+.energy-glow {
+  position: absolute;
+  width: 600px; height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(155,110,243,0.3) 0%, transparent 70%);
+  filter: blur(80px);
+  z-index: 1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.call-btn {
+  position: relative;
+  z-index: 10;
+  margin-top: 30px;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(155,110,243,0.5);
+  transition: all 0.3s ease;
+  z-index: 111;
+}
+.call-btn:hover {
+  box-shadow: 0 0 40px var(--accent);
+  transform: scale(1.05);
+}
+
+/* ticker */
+.ticker-wrap {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+}
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 25s linear infinite;
+}
+.ticker-item {
+  padding: 0 2rem;
+}
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* footer */
+.page-footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.telegram { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg'); background-color: #7c3aed; }
+.instagram { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); background-color: #7c3aed; }
+.email { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg'); background-color: #7c3aed; }
+.social-icon:hover { transform: scale(1.2); box-shadow: 0 0 20px var(--accent); }
