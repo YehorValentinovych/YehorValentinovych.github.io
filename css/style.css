@@ -12,8 +12,15 @@
   --accent-light: #7c3aed;
 }
 
+h1, h2, p {
+  word-wrap: break-word;
+  text-align: center;
+}
+
 body {
+  overflow-x: hidden;
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   background: var(--bg-dark);
   color: var(--text-light);
@@ -215,3 +222,10 @@ body.light .hero-title {
 .instagram { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg'); background-color: #7c3aed; }
 .email { background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg'); background-color: #7c3aed; }
 .social-icon:hover { transform: scale(1.2); box-shadow: 0 0 20px var(--accent); }
+
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  p { font-size: 1rem; }
+  canvas { width: 100vw; height: 100vh; }
+}
