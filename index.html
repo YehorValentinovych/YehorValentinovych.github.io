@@ -26,6 +26,28 @@
         </label>
       </div>
     </div>
+    <!-- Кнопка открытия меню -->
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <!-- Мобильное меню -->
+      <div class="mobile-menu-overlay"></div>
+
+      <div class="mobile-menu">
+        <button class="close-menu">&times;</button>
+        <nav class="mobile-nav">
+          <a href="#" class="mobile-link">Projects</a>
+          <a href="#" class="mobile-link">About</a>
+          <a href="#" class="mobile-link">Contact</a>
+        </nav>
+        <div class="mobile-socials">
+          <a href="https://t.me/yhr_v" class="social-icon telegram"></a>
+          <a href="https://instagram.com/yhr.vv" class="social-icon instagram"></a>
+          <a href="mailto:mcshka111@gmail.com" class="social-icon email"></a>
+        </div>
+      </div>
+
+     
   </header>
 
   <!-- Main -->
@@ -56,9 +78,11 @@
     </div>
     <small>© <span id="year"></span> Divine Studio — Digital Zen</small>
   </footer>
+
   <!-- Background layers -->
   <canvas id="matrix-canvas"></canvas>
   <canvas id="bubbles-canvas"></canvas>
   <script src="js/script.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>

@@ -61,6 +61,10 @@
  function drawEnergyPulse() {
    pulseTime += 0.02;
 
+   const scale = innerWidth < 768 ? 0.6 : 1; // уменьшаем радиус и интенсивность
+   const pulseRadius = (260 + Math.sin(pulseTime * 1.3) * 25) * scale;
+
+
    const pulseRadius = 240 + Math.sin(pulseTime * 1.4) * 30;
    const pulseAlpha = 0.25 + Math.sin(pulseTime * 1.6) * 0.1;
 
