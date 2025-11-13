@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vladimir Polonsky | Taxidermy Art</title>
+  <link rel="stylesheet" href="css/prototype.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Papyrus&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+<!-- HEADER -->
+  <header class="header">
+    <div class="theme-toggle" id="themeToggle">☀︎</div>
+    <div class="nav container">
+      <a href="#story" class="nav-link">My story</a>
+      <div class="logo">
+        <h1>VLADIMIR<br>POLONSKY</h1>
+      </div>
+      <a href="#works" class="nav-link">My works</a>
+    </div>
+    <div class="lang-toggle" id="langToggle">EN/UA</div>
+  </header>
+
+  <div class="container">
+    <!-- MAIN SECTION -->
+    <section class="main">
+      <div class="left img-box">
+        <img src="https://placehold.co/600x612" alt="Main artwork">
+      </div>
+      <div class="right">
+        <h2>The best way<br>to preserve<br>your catch</h2>
+        <p>Is to entrust it to a professional</p>
+        <button class="btn">Contact me</button>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="left">
+        <h2>What makes my work different?</h2>
+        <p>Each work is a work of art<br>
+          that reveals the character and uniqueness<br>
+          of each animal.</p>
+      </div>
+      <div class="right img-box">
+        <img src="https://placehold.co/600x612" alt="About section">
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section id="story" class="story">
+      <div class="left img-box">
+        <img src="https://placehold.co/600x691" alt="Vladimir portrait">
+      </div>
+      <div class="right">
+        <h2>A little about myself</h2>
+        <div class="story-content">
+          <ul class="story-list">
+            <li>Hello, my name is Vladimir. I have been making stuffed birds, animals, and reptiles for private collections since 1987.</li>
+            <li>From 2000 to 2003, I also made visual aids and teaching materials for the biology department of the Kirovograd Pedagogical Institute in Ukraine.</li>
+            <li>From 2015 to 2018, I made and installed a zoological collection and dioramas in the regional museum of local lore.</li>
+            <li>In 2018 and 2022, I assisted in creating Professor Vaha's zoological collection in the Czech Republic.</li>
+          </ul>
+          <p class="location">Currently lives and works in Canada.</p>
+          <button class="btn">Contact me</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS SECTION -->
+    <section id="works" class="works">
+      <h2>A look at my works</h2>
+      <div class="gallery">
+        <div class="img-box"><img src="https://placehold.co/285x396" alt=""></div>
+        <div class="img-box"><img src="https://placehold.co/285x396" alt=""></div>
+        <div class="img-box"><img src="https://placehold.co/285x396" alt=""></div>
+        <div class="img-box"><img src="https://placehold.co/285x396" alt=""></div>
+      </div>
+      <button class="btn show-more">Show more</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <h2>How to find me</h2>
+      <div class="footer-wrap">
+        <div class="left img-box">
+          <img src="https://placehold.co/600x520" alt="Footer animal">
+        </div>
+        <div class="right">
+          <div class="form-wrap">
+            <h3>Fill out the form and I will call you back</h3>
+            <form>
+              <input type="text" placeholder="Phone">
+              <input type="text" placeholder="Name">
+              <textarea placeholder="Description"></textarea>
+              <button class="btn form-btn">Send form</button>
+            </form>
+          </div>
+          <div class="map-wrap">
+            <h3>My workshop</h3>
+            <div class="map-box">
+              <iframe src="https://maps.google.com/maps?q=Toronto&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="264" height="206" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <button class="btn call">Call me</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+    });
+
+    const langToggle = document.getElementById("langToggle");
+    langToggle.addEventListener("click", () => {
+      langToggle.textContent =
+        langToggle.textContent === "EN/UA" ? "UA/EN" : "EN/UA";
+    });
+  </script>
+</body>
+</html>
