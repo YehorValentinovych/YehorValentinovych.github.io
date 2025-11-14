@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxidermy Workshop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fdfcfb;
+      --text: #2d2d2d;
+      --accent: #6a9c89;
+      --light-accent: #a3c9b3;
+      --header-height: 80px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      height: var(--header-height);
+      background-color: #ffffffc8;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://picsum.photos/1920/1080?blur=2') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      max-width: 800px;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .hero button:hover {
+      background: var(--light-accent);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    section {
+      padding: 100px 10%;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .about .image {
+      width: 50%;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .about .image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .about-content {
+      width: 50%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .about-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      margin-bottom: 30px;
+      color: var(--accent);
+    }
+
+    .about-content ul {
+      list-style: none;
+    }
+
+    .about-content li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    .about-content li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-size: 22px;
+    }
+
+    .about-content .highlight {
+      font-size: 20px;
+      margin-top: 30px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .about-content button {
+      margin-top: 40px;
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .about-content button:hover {
+      background: var(--light-accent);
+    }
+
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: var(--accent);
+      margin-bottom: 40px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid div {
+      background: url('https://picsum.photos/400/300') center/cover no-repeat;
+      height: 250px;
+      border-radius: 15px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .gallery-grid div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #0d3026;
+      color: white;
+      padding: 80px 10%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--light-accent);
+    }
+
+    .map iframe {
+      border: none;
+      width: 264px;
+      height: 206px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .map button {
+      width: 264px;
+      height: 41px;
+      border-radius: 30px;
+      border: none;
+      background: var(--light-accent);
+      color: #0d3026;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .map button:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+      .about {
+        flex-direction: column;
+      }
+      .about .image, .about-content {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">My Workshop</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Preserving Nature’s Beauty Since 1987</h1>
+    <p>Crafting lifelike representations of animals, birds, and reptiles for private collections and museums.</p>
+    <button>Show More</button>
+  </section>
+
+  <section class="about">
+    <div class="image"><img src="https://picsum.photos/600/600?blur=1" alt="About"></div>
+    <div class="about-content">
+      <h2>A Little About Myself</h2>
+      <ul>
+        <li>Hello, my name is Vladimir. I have been making stuffed birds, animals, and reptiles for private collections since 1987.</li>
+        <li>From 2000 to 2003, I also made visual aids and teaching materials for the biology department of the Kirovograd Pedagogical Institute in Ukraine.</li>
+        <li>From 2015 to 2018, I made and installed a zoological collection and dioramas in the nature department of the regional museum of local lore.</li>
+        <li>In 2018 and 2022, I completed an internship and assisted in the creation of Professor Vaha's zoological collection in the Czech Republic.</li>
+      </ul>
+      <p class="highlight">Currently lives and works in Canada.</p>
+      <button>Contact Me</button>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery of Works</h2>
+    <div class="gallery-grid">
+      <div></div><div></div><div></div>
+      <div></div><div></div><div></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="form">
+      <h3>How to Find Me</h3>
+      <form>
+        <input type="text" placeholder="Your name" style="display:block; margin-bottom:10px; width:264px; height:41px; border-radius:8px; border:none; padding:0 10px;">
+        <input type="email" placeholder="Your email" style="display:block; margin-bottom:10px; width:264px; height:41px; border-radius:8px; border:none; padding:0 10px;">
+        <button style="width:264px; height:41px; border-radius:30px; border:none; background:var(--accent); color:white;">Send</button>
+      </form>
+    </div>
+    <div class="map">
+      <h3>My Workshop</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.246563644341!2d-74.00601528459398!3d40.71277607933113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjIuMCJX!5e0!3m2!1sen!2sus!4v1614731087562!5m2!1sen!2sus"></iframe>
+      <button>CALL ME</button>
+    </div>
+  </footer>
+
+</body>
+</html>
