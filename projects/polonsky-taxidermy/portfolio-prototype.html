@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Papyrus&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/test.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="theme-toggle" id="themeToggle">
+      <span class="icon-sun">☀️</span>
+    </div>
+    <div class="logo">Yehor</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="lang-toggle">
+      <button id="langBtn">EN / UA</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to my portfolio</h1>
+    <p>Explore my creative world of design and development</p>
+    <button class="main-btn">See My Work</button>
+  </section>
+
+  <section class="about">
+    <div class="img-wrapper">
+      <img src="images/profile.jpg" alt="Profile" />
+    </div>
+    <div class="about-text">
+      <h2>A little about myself</h2>
+      <ul>
+        <li>Creative web developer</li>
+        <li>UI/UX enthusiast</li>
+        <li>Focused on quality design</li>
+        <li>Always learning new tech</li>
+      </ul>
+      <p class="location">Currently lives and works in Canada.</p>
+      <button class="main-btn">More about me</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2>How to find me</h2>
+    <div class="footer-content">
+      <form class="contact-form">
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Your email" />
+        <textarea placeholder="Your message"></textarea>
+        <button class="main-btn">Send</button>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4065025518973!2d-79.38705692349555!3d43.65107097110253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d6eac5cfab%3A0x20a519c1deabf11f!2sToronto%2C%20Canada!5e0!3m2!1sen!2sca!4v1696367645971!5m2!1sen!2sca"
+        allowfullscreen=""
+        loading="lazy"></iframe>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    const langBtn = document.getElementById('langBtn');
+    langBtn.addEventListener('click', () => {
+      if (langBtn.textContent.includes('EN')) {
+        langBtn.textContent = 'UA / EN';
+      } else {
+        langBtn.textContent = 'EN / UA';
+      }
+    });
+  </script>
+</body>
+</html>
