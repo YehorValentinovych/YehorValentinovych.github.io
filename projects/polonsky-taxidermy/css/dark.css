@@ -1,0 +1,370 @@
+/* ========================= */
+/* GLOBAL SETTINGS */
+/* ========================= */
+
+:root {
+  --bg: #0a0a0a;
+  --text: #e6e6e6;
+  --gold: #d6b679;
+  --accent: #8c7853;
+  --font-main: "Playfair Display", serif;
+  --font-ui: "Inter", sans-serif;
+  --transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ========================= */
+/* HEADER (YOUR HTML USES .header) */
+/* ========================= */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 18px 0;
+  z-index: 1000;
+  background: rgba(10,10,10,0.45);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding-bottom: 3px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--gold);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--gold);
+  transition: var(--transition);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* ========================= */
+/* HERO SECTION (YOUR HTML EXACTLY) */
+/* ========================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px; /* чтобы не пряталось за хедер */
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* не растягивает */
+  object-position: center;
+  z-index: -1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 680px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-family: var(--font-main);
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1.2;
+  color: white;
+}
+
+.hero-content h1 span {
+  color: var(--gold);
+}
+
+.hero-content p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.btn.primary,
+.btn.secondary,
+.btn.submit,
+.btn.call,
+.btn.show-more {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  color: var(--gold);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.btn.primary:hover,
+.btn.secondary:hover,
+.btn.submit:hover,
+.btn.call:hover,
+.btn.show-more:hover {
+  background: var(--gold);
+  color: black;
+}
+
+/* Center button in story */
+.center {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+/* ========================= */
+/* TITLES (WORKS, STORY, ABOUT) */
+/* ========================= */
+
+h2 {
+  font-family: var(--font-main);
+  font-size: clamp(2rem, 3vw, 3rem);
+  text-align: center;
+  margin-bottom: 25px;
+  color: white;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  display: block;
+  margin: 10px auto 0;
+  opacity: 0.8;
+}
+
+/* ========================= */
+/* ABOUT SECTION */
+/* ========================= */
+
+.about .grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.img-box {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.about .text h2 {
+  text-align: left;
+}
+
+.about .text p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* ========================= */
+/* STORY SECTION */
+/* ========================= */
+
+.story {
+  padding: 80px 0;
+}
+
+.story-wrap {
+  display: flex;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+.author-photo img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.timeline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.timeline .item {
+  padding: 18px 22px;
+  background: #111;
+  border-radius: 10px;
+  border-left: 3px solid var(--accent);
+  transition: var(--transition);
+}
+
+.timeline .item:hover {
+  transform: translateX(6px);
+  background: #161616;
+}
+
+/* ========================= */
+/* WORKS (GALLERY) */
+/* ========================= */
+
+.works {
+  padding: 80px 0;
+}
+
+.works p {
+  text-align: center;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+.gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+/* smooth hover */
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+  padding: 80px 0;
+  background: #070707;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+footer h3 {
+  font-family: var(--font-main);
+  margin-bottom: 20px;
+}
+
+footer input,
+footer textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+}
+
+footer iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .about .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .story-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-photo img {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+}
