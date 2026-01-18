@@ -128,7 +128,7 @@ nav a,
 }
 
 /* HEADER ACTIONS */
-.actions {
+/* .actions {
   display: flex;
   gap: 10px;
 }
@@ -146,14 +146,44 @@ nav a,
 
 .icon:hover {
   background: var(--gold-light);
-}
+} 
 
-/* SIMPLE SUN ICON */
 .sun::before {
   content: "☼";
   font-size: 20px;
   color: var(--dark);
 }
+*/
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-link {
+  width: 22px;
+  height: 22px;
+  color: #23241f;
+  opacity: 0.8;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.icon-link svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.icon-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.icon-link.phone {
+  margin-left: 6px;
+}
+
 
 /* ===========================
    HERO SECTION PREMIUM
@@ -165,7 +195,6 @@ nav a,
   align-items: center;
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 100px;
   overflow: hidden;
 }
 
@@ -337,7 +366,7 @@ nav a,
 
 /* TEXT */
 .about-text {
-  max-width: 560px;
+  text-align: left;
 }
 
 .about-text h2 {
@@ -382,23 +411,53 @@ nav a,
    RESPONSIVE
 ========================= */
 
-@media (max-width: 1024px) {
-  .about-row {
-    gap: 50px;
+/* @media (max-width: 1216px) {
+  .story-wrap {
+    flex-wrap: wrap;
   }
-}
+
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .timeline .item {
+    flex: 0 0 calc(50% - 12.5px);
+  }
+
+  .timeline .item:nth-last-child(-n+2) {
+    flex: 0 0 100%;
+    margin-top: 10px;
+  }
+} */
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 60px 0;
+  }
+  .about-row {
+    gap: 20px;
+  }
 
   .about-row {
     grid-template-columns: 1fr;
     margin-bottom: 80px;
   }
 
-  .about-text,
-  .about-image {
-    max-width: 100%;
+  .about-text {
+    text-align: center;
+    margin: 0 auto;
   }
 
+  /* .about-text,
+  .about-image {
+    max-width: 100%;
+  } */
+
   .about-image-box {
+    max-width: 576px;
+    margin: 0 auto;
     height: 500px;
   }
 
@@ -406,7 +465,7 @@ nav a,
   .about-row.reverse .about-image {
     order: unset;
   }
-
+}
 
 
 /* .about {
@@ -446,10 +505,19 @@ nav a,
   background-color: #EDEAEA;
 }
 
+.story h2 {
+  text-align: center;
+}
+
+.story p {
+  text-align: center;
+}
+
 .story-wrap {
   display: flex;
   gap: 40px;
   align-items: flex-start;
+  margin-top: 40px;
 }
 
 /* AUTHOR PHOTO FIX */
@@ -462,6 +530,9 @@ nav a,
   width: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.5),
+    inset 0 0 0 1px rgba(255,255,255,0.05);
 }
 
 /* TIMELINE LIST */
@@ -502,12 +573,76 @@ nav a,
   font-size: 18px;
   color: var(--olive);
 }
+
+.timeline .item,
+.story-full .item {
+  position: relative;
+}
+
+.timeline .item::before,
+.story-full .item::before {
+  content: attr(data-year);
+  position: absolute;
+  top: -33px;
+  left: 8px;
+  font-size: 42px;
+  font-weight: 600;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+
 @media (min-width: 1601px) {
     .story {
         padding: 120px 0;
         background-color: #EAE2D9;
         }
 }
+
+.story-full {
+  display: none;
+}
+
+/* <= 1216px */
+@media (max-width: 1216px) {
+  .hide-after-1216 {
+    display: none;
+  }
+
+  .timeline {
+    margin-top: 60px;
+  }
+
+  .story-full {
+    display: grid;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .story-full .item {
+    padding: 20px 25px;
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+    border-radius: var(--radius);
+    margin-bottom: 25px;
+    position: relative;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .story-full .item.left {
+    border-left: 5px solid var(--olive);
+  }
+
+  .story-full .item.right {
+    border-left: 5px solid var(--gold);
+  }
+
+  .btn.center {
+    display: block;
+    margin: 40px auto 0;
+  }
+}
+
 
 /* =========================================
    GALLERY
@@ -638,6 +773,9 @@ iframe {
 
 /* Small desktop */
 @media (max-width: 1280px) {
+    .hero-content {
+      margin: 0 auto;
+    }
     .hero h1 {
       font-size: 73px;
       margin-bottom: 20px;
@@ -692,6 +830,10 @@ iframe {
     flex-direction: column;
   }
 
+  .timeline {
+    margin-top: 0;
+  }
+
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -739,7 +881,9 @@ iframe {
     .hero h1 {
         font-size: 41px;
         }
-
+    h2 {
+      font-size: 32px;
+    }
     .about {
       padding: 60px 0;
     }
