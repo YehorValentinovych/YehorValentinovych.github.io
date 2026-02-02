@@ -8,8 +8,7 @@ const nextBtn = modal.querySelector('.next');
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 const galleryImages = Array.from(galleryItems).map(item => {
-  const bg = getComputedStyle(item).backgroundImage;
-  return bg.slice(5, -2);
+  return item.dataset.bg || item.style.backgroundImage.slice(5, -2);
 });
 
 let currentIndex = 0;
