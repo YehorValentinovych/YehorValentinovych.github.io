@@ -1,25 +1,44 @@
 const lazyItems = document.querySelectorAll('.gallery-item');
 
-const observer = new IntersectionObserver(
+const bgObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+
+    const item = entry.target;
+    const src = item.dataset.bg;
+
+    if (src) {
+      item.style.backgroundImage = `url(${src})`;
+      item.removeAttribute('data-bg');
+    }
+
+    bgObserver.unobserve(item);
+  });
+}, {
+  rootMargin: '200px',
+  threshold: 0.1
+});
+
+lazyItems.forEach(item => bgObserver.observe(item));
+
+
+const revealItems = document.querySelectorAll(
+  '.reveal, .timeline .item, .story-full .item'
+);
+
+const revealObserver = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const item = entry.target;
-        const src = item.dataset.bg;
-
-        if (src) {
-          item.style.backgroundImage = `url(${src})`;
-          item.removeAttribute('data-bg');
-        }
-
-        observer.unobserve(item);
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
       }
     });
   },
   {
-    rootMargin: '200px',
-    threshold: 0.1
+    threshold: 0.2,
+    rootMargin: '0px 0px -80px 0px'
   }
 );
 
-lazyItems.forEach(item => observer.observe(item));
+revealItems.forEach(el => revealObserver.observe(el));
