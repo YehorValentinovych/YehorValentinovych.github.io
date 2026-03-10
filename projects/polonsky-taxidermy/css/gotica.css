@@ -341,7 +341,7 @@ nav a,
 
 /* BUTTONS */
 .btn {
-  padding: 12px 30px;
+  padding: 12px 26px;
   border-radius: var(--radius);
   border: none;
   cursor: pointer;
