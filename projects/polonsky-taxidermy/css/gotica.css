@@ -59,6 +59,11 @@ background:#888;
 border-radius:10px;
 }
 
+*{
+scrollbar-width:thin;
+scrollbar-color:#888 #111;
+}
+
 h1, h2, h3 {
   font-family: "Cinzel", serif;
   letter-spacing: 0.04em;
@@ -1293,4 +1298,27 @@ nav a,
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 9999;
+
+  background: radial-gradient(
+    circle,
+    rgba(160,170,120,0.35) 0%,
+    rgba(160,170,120,0.18) 30%,
+    rgba(160,170,120,0.08) 55%,
+    rgba(160,170,120,0.02) 75%,
+    transparent 80%
+  );
+
+  filter: blur(25px);
+  mix-blend-mode: multiply;
+
+  transform: translate(-50%, -50%);
 }
