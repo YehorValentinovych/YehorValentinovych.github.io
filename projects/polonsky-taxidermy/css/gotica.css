@@ -283,7 +283,7 @@ nav a,
 /* BUTTON */
 .btn.primary {
   padding: 14px 36px;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   background: var(--olive);
   color: white;
@@ -373,7 +373,8 @@ nav a,
 .center {
   display: block;
   width: fit-content;
-  margin: 40px auto 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* =========================
@@ -464,6 +465,7 @@ nav a,
 
 .btn.secondary {
   transition: 0.8s ease;
+  margin-top: 10px;
 }
 
 .btn.secondary:hover {
@@ -609,6 +611,8 @@ nav a,
 
 .btn.show-more {
   transition: 0.8s ease;
+  text-align: center;
+  margin-top: 35px;
 }
 
 .btn.show-more:hover {
@@ -683,8 +687,7 @@ nav a,
 
   .btn.center {
     display: block;
-    /* margin: 40px auto 0; */
-    min-width: 162px;
+    text-align: center;
     font-size: 16px;
   }
 }
@@ -797,7 +800,8 @@ nav a,
 .show-more {
   background: var(--olive);
   color: var(--white);
-  margin: 40px auto 0;
+  /* margin: 40px auto 0; */
+  text-align: center;
   padding: 16px 30px;
   appearance: none;
   border: none;
