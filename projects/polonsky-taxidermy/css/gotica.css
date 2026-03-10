@@ -1180,6 +1180,14 @@ nav a,
     padding: 60px 0;
   }
 
+  .btn.center {
+    font-size: 15px;
+  }
+
+  .btn.show-more {
+    font-size: 15px;
+  }
+
   .story {
     padding: 60px 0;
   }
