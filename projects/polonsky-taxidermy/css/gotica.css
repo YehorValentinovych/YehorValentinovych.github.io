@@ -751,7 +751,7 @@ nav a,
   background: var(--olive);
   color: var(--white);
   margin: 40px auto 0;
-
+  padding: 16px 30px;
   appearance: none;
   border: none;
 }
@@ -808,12 +808,18 @@ nav a,
 .footer h2 {
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  text-align: center;
 }
 
 .footer-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  margin-top: 30px;
 }
 
 @media (max-width: 600px) {
@@ -872,6 +878,7 @@ nav a,
 
 .footer-subscribe h4 {
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .subscribe-form {
