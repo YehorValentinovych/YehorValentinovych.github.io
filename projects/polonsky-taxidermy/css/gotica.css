@@ -115,6 +115,11 @@ nav a,
   letter-spacing: 1px;
 }
 
+.logo a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
 /* NAV */
 .nav a {
   margin-left: 25px;
