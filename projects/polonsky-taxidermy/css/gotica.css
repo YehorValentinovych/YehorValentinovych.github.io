@@ -383,7 +383,7 @@ nav a,
 }
 
 .about-text h2 {
-  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
   margin-bottom: 24px;
 }
 
@@ -1071,13 +1071,13 @@ nav a,
 /* Tablet */
 @media (max-width: 1024px) {
   .hero-img img {
-    object-position: 91% center;
+    object-position: 60% center;
   }
 }
 
 @media (max-width: 900px) {
   .hero-img img {
-    object-position: 80% center;
+    object-position: 63% center;
   }
   .grid-2 {
     grid-template-columns: 1fr;
@@ -1109,6 +1109,9 @@ nav a,
 }
 
 @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
   .logo {
     font-size: 20px;
   }
@@ -1124,8 +1127,14 @@ nav a,
     max-width: 550px;
     margin: 0 auto;
     width: 100%;
-    padding: 40px 10px;
+    padding: 40px 0px;
     animation: fadeInUp 1s ease forwards;
+  }
+  .hero-text {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+    border-radius: var(--radius);
+    box-shadow: 0 25px 70px rgba(0,0,0,0.13);
   }
   .hero-img {
     object-fit: cover;
@@ -1136,10 +1145,17 @@ nav a,
     object-position: 31% center;
   }
   .hero h1 {
-    font-size: 41px;
+    font-size: 29px;
+  }
+  .btn.primary {
+    padding: 14px 30px;
+    font-size: 15px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 19px;
   }
   .about {
     padding: 60px 0;
