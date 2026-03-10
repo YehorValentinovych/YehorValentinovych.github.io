@@ -439,6 +439,14 @@ nav a,
     transform 1.6s ease;
 }
 
+.btn.secondary {
+  transition: 0.8s ease;
+}
+
+.btn.secondary:hover {
+  transform: translateY(-3px);
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -574,6 +582,14 @@ nav a,
   font-weight: 600;
   opacity: 0.18;
   pointer-events: none;
+}
+
+.btn.show-more {
+  transition: 0.8s ease;
+}
+
+.btn.show-more:hover {
+  transform: translateY(-3px);
 }
 
 @media (min-width: 1601px) {
