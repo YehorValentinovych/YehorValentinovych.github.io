@@ -46,6 +46,19 @@ body {
   user-select: none;
 }
 
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+background:#888;
+border-radius:10px;
+}
+
 h1, h2, h3 {
   font-family: "Cinzel", serif;
   letter-spacing: 0.04em;
