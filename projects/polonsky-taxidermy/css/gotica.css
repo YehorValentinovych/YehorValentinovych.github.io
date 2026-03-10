@@ -613,6 +613,8 @@ nav a,
   transition: 0.8s ease;
   text-align: center;
   margin-top: 35px;
+  font-size: 16px;
+  min-width: 161px;
 }
 
 .btn.show-more:hover {
@@ -685,11 +687,11 @@ nav a,
     border-left: 5px solid var(--gold);
   }
 
-  .btn.center {
+  /* .btn.center {
     display: block;
     text-align: center;
     font-size: 16px;
-  }
+  } */
 }
 
 /* =========================================
