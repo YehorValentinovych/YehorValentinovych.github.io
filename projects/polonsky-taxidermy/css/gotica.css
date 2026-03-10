@@ -734,6 +734,12 @@ nav a,
 .gallery-item:nth-child(18) {
   background-position: 11% 100%;
 }
+.gallery-item:nth-child(20) {
+  background-position: 100% 10%;
+}
+.gallery-item:nth-child(33) {
+  background-position: 100% 20%;
+}
 
 .gallery-item img {
   width: 100%;
