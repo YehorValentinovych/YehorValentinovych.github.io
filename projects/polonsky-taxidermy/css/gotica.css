@@ -38,7 +38,6 @@ body {
 
 body {
   background: var(--light);
-  /* font-family: "Montserrat", sans-serif; */
   font-family: "Inter", system-ui, sans-serif;
   font-size: 17px;
   color: var(--dark);
@@ -47,14 +46,11 @@ body {
 }
 
 h1, h2, h3 {
-  /* font-family: "Cardo", serif;
-  letter-spacing: 0.5px; */
   font-family: "Cinzel", serif;
   letter-spacing: 0.04em;
 }
 
 h2 {
-
   font-size: 42px;
   margin-bottom: 30px;
 }
@@ -108,7 +104,6 @@ nav a,
 
 /* LOGO */
 .logo {
-  /* font-family: "Cardo", serif; */
   font-family: "Cinzel", serif;
   font-size: 28px;
   font-weight: 700;
@@ -201,21 +196,6 @@ nav a,
   overflow: hidden;
 }
 
-/* BACKGROUND GRADIENT */
-/* .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    120deg,
-    #f9f7f1 0%,
-    #f1eee5 50%,
-    #e7e5da 100%
-  );
-  z-index: -3;
-} */
-
-/* YOUR PHOTO */
 .hero-img {
   position: absolute;
   inset: 0;
@@ -234,8 +214,6 @@ nav a,
   object-fit: cover;
 }
 
-
-
 /* CONTENT BLOCK */
 .hero-content {
   text-align: center;
@@ -251,7 +229,6 @@ nav a,
 
 .hero h1 {
   font-size: 82px;
-  /* font-family: "Cardo", serif; */
   font-family: "Cinzel", serif;
   margin-bottom: 20px;
   letter-spacing: 1px;
@@ -276,7 +253,6 @@ nav a,
     0 2px 12px rgba(0,0,0,0.45),
     0 1px 2px rgba(0,0,0,0.3);
 }
-
 
 /* BUTTON */
 .btn.primary {
@@ -337,7 +313,6 @@ nav a,
   to   { clip-path: inset(0 0 0 0); }
 }
 
-
 /* BUTTONS */
 .btn {
   padding: 12px 30px;
@@ -378,7 +353,6 @@ nav a,
 /* =========================
    ABOUT SECTION
 ========================= */
-
 .about {
   padding: 120px 0;
 }
@@ -424,11 +398,6 @@ nav a,
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
 }
-
-/* REVERSED ROW */
-/* .about-row.reverse {
-  grid-template-columns: 1fr 1fr;
-} */
 
 .about-row.reverse .about-text {
   order: 2;
@@ -548,8 +517,6 @@ nav a,
   border-radius: var(--radius);
   margin-bottom: 25px;
   position: relative;
-  /* animation: fadeUp 0.8s ease both; */
-
   opacity: 0;
   transform: translateY(40px);
   transition:
@@ -574,7 +541,7 @@ nav a,
   background: var(--gold-light) !important;
 }
 
-/* NICE DIVIDER BETWEEN PARAGRAPHS */
+/* DIVIDER BETWEEN PARAGRAPHS */
 .timeline .item:after {
   content: "✦";
   position: absolute;
@@ -601,7 +568,6 @@ nav a,
   opacity: 0.18;
   pointer-events: none;
 }
-
 
 @media (min-width: 1601px) {
     .story {
@@ -649,7 +615,6 @@ nav a,
     border-radius: var(--radius);
     margin-bottom: 25px;
     position: relative;
-    /* animation: fadeUp 0.8s ease both; */
     opacity: 0;
     transform: translateY(40px);
     transition:
@@ -1103,55 +1068,50 @@ nav a,
 }
 
 @media (max-width: 768px) {
-    .logo {
-        font-size: 20px;
-    }
-    .hero {
-        display: flex;
-        align-items: center;
-        padding-left: 4%;
-        padding-right: 4%;
-        padding-top: 50px;
-    }
-    .hero-content {
-        text-align: center;
-        max-width: 550px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 40px 10px;
-        
-        /* background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(1px);
-        border-radius: 22px;
-        box-shadow: 0 25px 70px rgba(0,0,0,0.13); */
-        animation: fadeInUp 1s ease forwards;
-        }
-    .hero-img {
-        object-fit: cover;
-        object-position: left center;
-    }
+  .logo {
+    font-size: 20px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 50px;
+  }
+  .hero-content {
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 10px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  .hero-img {
+    object-fit: cover;
+    object-position: left center;
+  }
 
-    .hero-img img {
-        object-position: 31% center;
-      }
-    .hero h1 {
-        font-size: 41px;
-        }
-    h2 {
-      font-size: 32px;
-    }
-    .about {
-      padding: 60px 0;
-    }
+  .hero-img img {
+    object-position: 31% center;
+  }
+  .hero h1 {
+    font-size: 41px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .about {
+    padding: 60px 0;
+  }
 
-    .story {
-      padding: 60px 0;
-    }
+  .story {
+    padding: 60px 0;
+  }
 
-    .works {
-      padding: 60px 0;
-      text-align: center;
-    }
+  .works {
+    padding: 60px 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
