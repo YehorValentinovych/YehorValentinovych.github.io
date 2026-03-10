@@ -382,6 +382,10 @@ nav a,
   margin-bottom: 24px;
 }
 
+.about-text h2 span {
+  color: var(--olive);
+}
+
 .about-text p {
   margin-bottom: 20px;
   line-height: 1.65;
