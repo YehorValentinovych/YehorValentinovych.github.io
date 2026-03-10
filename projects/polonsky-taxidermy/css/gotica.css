@@ -43,6 +43,7 @@ body {
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
+  user-select: none;
 }
 
 h1, h2, h3 {
@@ -58,6 +59,8 @@ h2 {
 img {
   max-width: 100%;
   display: block;
+  user-select: none;
+  pointer-events: none;
 }
 
 .subtitle, .hero-subtitle {
