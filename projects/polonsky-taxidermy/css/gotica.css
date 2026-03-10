@@ -686,12 +686,6 @@ nav a,
   .story-full .item.right {
     border-left: 5px solid var(--gold);
   }
-
-  /* .btn.center {
-    display: block;
-    text-align: center;
-    font-size: 16px;
-  } */
 }
 
 /* =========================================
@@ -1173,7 +1167,6 @@ nav a,
     font-size: 29px;
   }
   .btn.primary {
-    padding: 14px 30px;
     font-size: 15px;
   }
   h2 {
